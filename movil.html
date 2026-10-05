@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1d2275">
+<title>Endevina la Cançó · Jugar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;800;900&display=swap">
+<style>
+:root{
+  --indigo:#1d2275; --noche:#0e1142; --amarillo:#ffd23f; --rojo:#ef3b36; --verde:#1fbf62;
+  --azul:#2f7cf6; --naranja:#ff8a1f; --lila:#9b4dde; --tinta:#161a4a; --gris:#6a6f9e; --linea:#dcdff0;
+  --display:"Lilita One","Arial Rounded MT Bold","Arial Black",system-ui,sans-serif;
+  --texto:"Nunito",ui-rounded,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --fondo:var(--indigo);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+[hidden]{display:none!important}
+html,body{height:100%;margin:0}
+body{
+  color:#fff;font:600 16px/1.4 var(--texto);background:var(--fondo);transition:background .3s;
+  background-image:repeating-conic-gradient(from 0deg at 50% 30%,#ffffff0d 0 9deg,transparent 9deg 18deg);
+  padding:env(safe-area-inset-top,0px) 16px env(safe-area-inset-bottom,0px);
+  display:flex;flex-direction:column;
+}
+body.bien{--fondo:#159a4e} body.mal{--fondo:#c62d29} body.nada{--fondo:#3b3f6e}
+button,input{font:inherit;color:inherit}
+h1,h2{font-family:var(--display);font-weight:400;margin:0;line-height:1.05;text-wrap:balance}
+.barra{display:flex;align-items:center;gap:10px;padding-block:12px;min-height:56px}
+.barra .yo{font:400 20px var(--display);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.barra .pts{background:var(--noche);border-radius:99px;padding:4px 12px;font:900 15px var(--texto);font-variant-numeric:tabular-nums}
+.pantalla{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;padding-block:16px 24px}
+.grande{font-size:clamp(30px,9vw,44px);text-shadow:0 4px 0 #0005}
+.sub{color:#dfe2ff;font-weight:800;margin:0;max-width:30ch}
+.logo{font:400 clamp(34px,11vw,52px)/1 var(--display);text-transform:uppercase;text-shadow:0 4px 0 var(--rojo),0 8px 0 var(--noche)}
+.logo span{color:var(--amarillo)}
+form{display:flex;flex-direction:column;gap:12px;width:min(340px,100%)}
+.entrada{width:100%;border:0;border-radius:14px;padding:14px;background:#fff;color:var(--tinta);text-align:center;font:400 24px var(--display);box-shadow:0 4px 0 var(--noche)}
+.entrada.codigo{font-size:40px;letter-spacing:.2em}
+.entrada::placeholder{color:#b3b6d3}
+.btn{border:0;border-radius:14px;padding:14px;font:400 24px var(--display);background:var(--amarillo);color:var(--noche);box-shadow:0 5px 0 #0006}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 #0006}
+.btn:disabled{opacity:.6}
+.error{background:var(--rojo);border-radius:12px;padding:10px 14px;font-weight:800}
+.trobada{background:#159a4e;border-radius:12px;padding:8px 14px;font-weight:800;font-size:14px}
+.vinilo{width:120px;aspect-ratio:1;border-radius:50%;animation:giro 1.8s linear infinite;
+  background:radial-gradient(circle,var(--amarillo) 0 6%,var(--rojo) 7% 27%,#111 28% 30%,transparent 31%),repeating-radial-gradient(circle,#1b1b1b 0 2px,#262626 3px 5px);
+  box-shadow:0 0 0 4px #000,0 10px 30px #0008}
+@keyframes giro{to{transform:rotate(360deg)}}
+.latido{animation:latido 1.4s ease-in-out infinite}
+@keyframes latido{50%{transform:scale(1.06)}}
+
+/* responder */
+.responder{flex:1;display:flex;flex-direction:column;gap:10px;padding-bottom:16px}
+.ronda{display:flex;justify-content:space-between;font-weight:900;color:#dfe2ff}
+.pregunta{font:400 26px var(--display);text-align:center}
+.tiempo{height:10px;border-radius:99px;background:#ffffff26;overflow:hidden}
+.tiempo i{display:block;height:100%;width:100%;background:var(--amarillo);border-radius:99px;transform-origin:left}
+.opciones{flex:1;display:grid;grid-template-rows:repeat(var(--n,4),1fr);gap:10px;min-height:300px}
+.opcion{--c:var(--rojo);border:0;border-radius:18px;background:var(--c);color:#fff;display:flex;align-items:center;gap:14px;padding:12px 16px;text-align:left;
+  font:800 clamp(18px,5.4vw,24px)/1.15 var(--texto);box-shadow:0 6px 0 #0006}
+.opcion:nth-child(2){--c:var(--azul)}.opcion:nth-child(3){--c:var(--naranja)}.opcion:nth-child(4){--c:var(--lila)}
+.opcion:active{transform:translateY(4px);box-shadow:0 2px 0 #0006}
+.opcion:disabled{opacity:.45}
+.opcion .letra{flex:none;width:46px;height:46px;border-radius:12px;background:#fff;color:var(--c);display:grid;place-items:center;font:400 28px var(--display)}
+.elegida{--c:var(--rojo);border-radius:18px;background:var(--c);padding:14px 18px;font:800 22px var(--texto);box-shadow:0 6px 0 #0006;max-width:100%}
+.icono{font-size:84px;line-height:1}
+.ganados{font:400 44px var(--display);color:var(--amarillo);text-shadow:0 4px 0 #0005}
+.chapa{background:#0003;border-radius:14px;padding:10px 18px;font-weight:800}
+.chapa b{font:400 28px var(--display);display:block}
+.estado-red{position:fixed;left:50%;transform:translateX(-50%);top:calc(8px + env(safe-area-inset-top,0px));background:var(--noche);border-radius:99px;padding:4px 12px;font-size:13px;font-weight:800}
+@media (prefers-reduced-motion:reduce){.vinilo,.latido{animation:none}}
+</style>
+</head>
+<body>
+<div class="estado-red" id="red" hidden>Reconnectant…</div>
+
+<div class="barra" id="barra" hidden>
+  <span class="yo" id="b-nombre"></span>
+  <span class="pts" id="b-puntos">0 pts</span>
+</div>
+
+<!-- entrar -->
+<main class="pantalla" id="p-entrar">
+  <div class="logo">Endevina <span>la Cançó</span></div>
+  <form id="f-entrar" autocomplete="off">
+    <input class="entrada codigo" id="codigo" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="0000" aria-label="Codi de la partida" required>
+    <div class="trobada" id="avis-sala" hidden>✅ Partida trobada: només cal el teu nom</div>
+    <input class="entrada" id="nombre" maxlength="16" placeholder="El teu nom" aria-label="El teu nom" required>
+    <button class="btn" id="b-entrar">Entrar!</button>
+    <div class="error" id="e-entrar" hidden></div>
+  </form>
+</main>
+
+<!-- esperant / escoltant / enviat / resultat / fi: una pantalla que canvia -->
+<main class="pantalla" id="p-info" hidden>
+  <div id="i-visual"></div>
+  <h1 class="grande" id="i-titulo"></h1>
+  <p class="sub" id="i-sub"></p>
+  <div id="i-extra"></div>
+</main>
+
+<!-- respondre -->
+<main class="responder" id="p-responder" hidden>
+  <div class="ronda"><span id="r-ronda"></span><span id="r-seg"></span></div>
+  <div class="tiempo"><i id="r-barra"></i></div>
+  <div class="pregunta" id="r-pregunta"></div>
+  <div class="opciones" id="r-opciones"></div>
+</main>
+
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const LETRAS=['A','B','C','D'];
+const guardar=(k,v)=>{ try{ localStorage.setItem(k,v); }catch{} };
+const leer=k=>{ try{ return localStorage.getItem(k); }catch{ return null; } };
+
+let codigo=null, jid=null, fuente=null, estado=null, finRespuesta=0, animacion=null, enviando=null;
+
+$('#codigo').value=new URLSearchParams(location.search).get('c')||'';
+$('#nombre').value=leer('alc-nombre')||'';
+if($('#codigo').value) $('#nombre').focus();
+
+// si només hi ha una partida oberta, omplim el codi sol: així l'enllaç sense codi ja serveix
+if(!$('#codigo').value){
+  fetch('/api/sala/activa').then(r=>r.json()).then(d=>{
+    if(d.codigo && !$('#codigo').value){
+      $('#codigo').value=d.codigo;
+      $('#avis-sala').hidden=false;
+      $('#nombre').focus();
+    }
+  }).catch(()=>{});
+}
+
+async function post(ruta, datos){
+  const r=await fetch(ruta,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(datos)});
+  const j=await r.json().catch(()=>({}));
+  if(!r.ok) throw new Error(j.error||'Error '+r.status);
+  return j;
+}
+
+$('#f-entrar').onsubmit=async e=>{
+  e.preventDefault();
+  const c=$('#codigo').value.trim(), n=$('#nombre').value.trim();
+  if(!/^\d{4}$/.test(c)){ return error('El codi té 4 números'); }
+  if(!n){ return error('Escriu el teu nom'); }
+  $('#b-entrar').disabled=true;
+  try{
+    const r=await post(`/api/sala/${c}/unirse`,{nombre:n, id:leer('alc-id-'+c)});
+    codigo=c; jid=r.id;
+    guardar('alc-nombre',n); guardar('alc-id-'+c,jid);
+    history.replaceState(null,'',`?c=${c}`);
+    conectar();
+  }catch(err){ error(err.message); }
+  $('#b-entrar').disabled=false;
+};
+function error(msg){ const e=$('#e-entrar'); e.textContent=msg; e.hidden=false; }
+
+function conectar(){
+  fuente?.close();
+  fuente=new EventSource(`/api/sala/${codigo}/eventos?jugador=${jid}`);
+  fuente.onmessage=e=>{ $('#red').hidden=true; pintar(JSON.parse(e.data)); };
+  fuente.onerror=()=>{ $('#red').hidden=false; };
+}
+
+function ver(id){
+  ['#p-entrar','#p-info','#p-responder'].forEach(p=>$(p).hidden=p!==id);
+  $('#barra').hidden=id==='#p-entrar';
+}
+function info({visual='',titulo='',sub='',extra='',fondo=''}){
+  document.body.className=fondo;
+  $('#i-visual').innerHTML=visual; $('#i-titulo').textContent=titulo;
+  $('#i-sub').textContent=sub; $('#i-extra').innerHTML=extra;
+  ver('#p-info');
+}
+const puesto=p=>p?(p===1?'1r':p===2?'2n':p===3?'3r':p===4?'4t':p+'è'):'–';
+
+function pintar(s){
+  estado=s;
+  cancelAnimationFrame(animacion);
+  if(s.fase==='cerrada'){ fuente?.close(); info({visual:'<div class="icono">👋</div>',titulo:'Partida acabada',sub:'El profe ha tancat la sala. Gràcies per jugar!'}); $('#barra').hidden=true; return; }
+  if(s.fase==='fuera'){ fuente?.close(); ver('#p-entrar'); error('Aquesta partida ja no et reconeix. Torna a entrar.'); return; }
+  $('#b-nombre').textContent=s.yo.nombre;
+  $('#b-puntos').textContent=s.yo.puntos.toLocaleString('ca-ES')+' pts';
+
+  if(s.fase==='espera'){
+    return info({visual:'<div class="icono latido">🎧</div>',titulo:'Ja ets a dins!',sub:`Mira la pantalla gran. Quan comenci, les opcions sortiran aquí.`,extra:`<div class="chapa">${s.jugadores} ${s.jugadores===1?'jugador':'jugadors'} a la sala</div>`});
+  }
+  if(s.fase==='pregunta'){
+    if(!s.abierta) return info({visual:'<div class="vinilo"></div>',titulo:`Ronda ${s.ronda}`,sub:'Prepara\'t… ara sonarà!'});
+    if(s.miRespuesta!=null || enviando!=null){
+      const k=s.miRespuesta??enviando;
+      return info({visual:`<div class="elegida" style="--c:${['var(--rojo)','var(--azul)','var(--naranja)','var(--lila)'][k]}">${LETRAS[k]} · ${esc(s.opciones[k])}</div>`,
+        titulo:'Resposta enviada!',sub:'Hauràs encertat? Mira la pantalla.'});
+    }
+    finRespuesta=performance.now()+(s.restanteMs||0);
+    $('#r-ronda').textContent=`Ronda ${s.ronda}/${s.total}`;
+    $('#r-pregunta').textContent=s.pregunta;
+    $('#r-opciones').style.setProperty('--n',s.opciones.length);
+    $('#r-opciones').innerHTML=s.opciones.map((o,k)=>`<button class="opcion" data-k="${k}"><span class="letra">${LETRAS[k]}</span><span>${esc(o)}</span></button>`).join('');
+    document.body.className='';
+    ver('#p-responder');
+    const cuenta=()=>{
+      const quedan=Math.max(0,finRespuesta-performance.now());
+      $('#r-barra').style.transform=`scaleX(${quedan/(s.limiteMs||1)})`;
+      $('#r-seg').textContent=Math.ceil(quedan/1000)+' s';
+      if(quedan>0) animacion=requestAnimationFrame(cuenta);
+      else document.querySelectorAll('.opcion').forEach(b=>b.disabled=true);
+    };
+    cuenta();
+    return;
+  }
+  enviando=null;
+  if(s.fase==='resuelto' || s.fase==='ranking'){
+    const r=s.resultado||{};
+    const pos=`<div class="chapa">Vas <b>${puesto(s.yo.posicion)}</b> de ${s.jugadores}</div>`;
+    if(r.acierto===true){ navigator.vibrate?.(80); return info({fondo:'bien',visual:'<div class="icono">✅</div>',titulo:'Correcte!',extra:`<div class="ganados">+${r.ganados}</div>${pos}`}); }
+    if(r.acierto===false){ navigator.vibrate?.([60,60,60]); return info({fondo:'mal',visual:'<div class="icono">❌</div>',titulo:'Ui, no!',sub:`Era: ${r.correcta}`,extra:pos}); }
+    return info({fondo:'nada',visual:'<div class="icono">⏰</div>',titulo:'Sense resposta',sub:`Era: ${r.correcta||'…'}`,extra:pos});
+  }
+  if(s.fase==='fin'){
+    const p=s.yo.posicion;
+    const icono=p===1?'🏆':p===2?'🥈':p===3?'🥉':'🎵';
+    return info({visual:`<div class="icono">${icono}</div>`,titulo:p<=3?`Has quedat ${puesto(p)}!`:`Has quedat ${puesto(p)}`,
+      sub:`de ${s.jugadores} jugadors`,extra:`<div class="chapa"><b>${s.yo.puntos.toLocaleString('ca-ES')}</b>punts</div>`});
+  }
+}
+
+$('#r-opciones').addEventListener('click',async e=>{
+  const b=e.target.closest('.opcion'); if(!b || b.disabled) return;
+  const k=+b.dataset.k;
+  enviando=k; cancelAnimationFrame(animacion);
+  pintar(estado);
+  try{ await post(`/api/sala/${codigo}/responder`,{jugador:jid,k}); }
+  catch(err){
+    enviando=null;
+    info({fondo:'nada',visual:'<div class="icono">⏰</div>',titulo:'No ha arribat',sub:err.message});
+  }
+});
+
+// si el mòbil torna de segon pla, es torna a enganxar
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden && codigo && fuente?.readyState===2) conectar(); });
+</script>
+</body>
+</html>

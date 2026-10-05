@@ -1,0 +1,1217 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Endevina la Cançó</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@500;700;800;900&display=swap">
+<style>
+:root{
+  --indigo:#1d2275; --indigo-2:#282e9a; --noche:#0e1142;
+  --amarillo:#ffd23f; --rojo:#ef3b36; --verde:#1fbf62; --azul:#2f7cf6; --naranja:#ff8a1f;
+  --papel:#ffffff; --papel-2:#f1f2fb; --tinta:#161a4a; --gris:#6a6f9e; --linea:#dcdff0;
+  --display:"Lilita One","Arial Rounded MT Bold","Arial Black",system-ui,sans-serif;
+  --texto:"Nunito",ui-rounded,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{
+  margin:0;color:var(--tinta);font:500 15px/1.5 var(--texto);
+  background:var(--indigo);
+  background-image:
+    radial-gradient(circle at 50% 38%, #3a41c9 0, transparent 60%),
+    repeating-conic-gradient(from 0deg at 50% 38%, #ffffff0d 0 9deg, transparent 9deg 18deg);
+  background-attachment:fixed;
+}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--amarillo);outline-offset:2px}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1.05;text-wrap:balance}
+
+.envoltorio{max-width:1120px;margin:0 auto;padding-inline:16px;padding-block:18px 60px}
+
+/* ---------- cabecera ---------- */
+.cabecera{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.logo{display:flex;align-items:center;gap:10px;background:none;border:0;padding:0;color:#fff}
+.logo-disco{width:40px;height:40px;border-radius:50%;flex:none;
+  background:radial-gradient(circle,var(--rojo) 0 18%,#111 19% 22%,#222 23% 40%,#111 41% 44%,#2a2a2a 45% 100%);
+  box-shadow:0 0 0 3px var(--amarillo)}
+.logo b{font:400 26px/1 var(--display);letter-spacing:.01em;text-shadow:0 3px 0 var(--noche)}
+.logo b span{color:var(--amarillo)}
+.cabecera .espacio{flex:1}
+
+/* ---------- botones ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:0;border-radius:12px;
+  padding:10px 16px;font-weight:800;background:var(--papel-2);color:var(--tinta);
+  box-shadow:0 3px 0 #0003;transition:transform .08s}
+.btn:active{transform:translateY(2px);box-shadow:0 1px 0 #0003}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.primario{background:var(--amarillo);color:var(--noche)}
+.btn.rojo{background:var(--rojo);color:#fff}
+.btn.verde{background:var(--verde);color:#fff}
+.btn.fantasma{background:#ffffff1a;color:#fff;box-shadow:none}
+.btn.fantasma:hover{background:#ffffff2e}
+.btn.mini{padding:6px 10px;border-radius:9px;font-size:13px}
+.btn.grande{padding:14px 26px;font-size:18px;border-radius:16px}
+.btn-icono{border:0;background:transparent;border-radius:8px;padding:6px 8px;color:var(--gris)}
+.btn-icono:hover{background:var(--papel-2);color:var(--tinta)}
+
+.aviso{background:var(--rojo);color:#fff;border-radius:14px;padding:12px 16px;margin-bottom:18px;font-weight:700}
+.aviso code{background:#0003;padding:1px 6px;border-radius:5px}
+
+/* ---------- inicio ---------- */
+.portada{color:#fff;text-align:center;padding-block:10px 30px}
+.portada h1{font-size:clamp(40px,8vw,76px);text-transform:uppercase;letter-spacing:.01em;
+  text-shadow:0 5px 0 var(--rojo),0 10px 0 var(--noche)}
+.portada h1 span{color:var(--amarillo)}
+.portada p{max-width:56ch;margin:18px auto 22px;font-size:17px;color:#dfe2ff}
+.titulo-seccion{display:flex;align-items:baseline;gap:12px;color:#fff;margin:6px 0 14px;flex-wrap:wrap}
+.titulo-seccion h2{font-size:26px}
+.titulo-seccion small{color:#b7bcf5;font-weight:700}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.tarjeta{background:var(--papel);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 6px 0 var(--noche)}
+.cubierta{--c:var(--rojo);aspect-ratio:16/9;display:grid;place-items:center;position:relative;overflow:hidden;
+  background:var(--c);background-image:repeating-conic-gradient(from 0deg at 50% 120%,#ffffff1f 0 8deg,transparent 8deg 16deg)}
+.cubierta .vinilo{width:38%;box-shadow:0 8px 0 #0004}
+.cubierta b{position:absolute;right:12px;bottom:8px;font:400 40px/1 var(--display);color:#fff;text-shadow:0 3px 0 #0004;font-variant-numeric:tabular-nums}
+.tarjeta .cuerpo{padding:12px 14px 14px;display:flex;flex-direction:column;gap:10px;flex:1}
+.tarjeta h3{font-size:21px}
+.tarjeta .meta{color:var(--gris);font-size:13px;font-weight:700}
+.tarjeta .acciones{display:flex;gap:8px;margin-top:auto;align-items:center}
+.vacio{background:#ffffff14;border:2px dashed #ffffff40;color:#dfe2ff;border-radius:18px;padding:30px;text-align:center}
+
+/* ---------- editor ---------- */
+.panel{background:var(--papel);border-radius:20px;padding:18px;box-shadow:0 6px 0 var(--noche)}
+.editor{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:18px;align-items:start}
+@media (max-width:900px){.editor{grid-template-columns:1fr}}
+.campo{display:flex;flex-direction:column;gap:5px}
+.campo>span{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--gris)}
+.entrada{border:2px solid var(--linea);background:#fff;border-radius:10px;padding:8px 10px;width:100%;min-width:0}
+.entrada:focus{border-color:var(--azul);outline:none}
+.nombre-quiz{font:400 28px/1.1 var(--display);border:0;border-bottom:3px dashed var(--linea);border-radius:0;padding:4px 2px;width:100%;background:transparent}
+.nombre-quiz:focus{outline:none;border-bottom-color:var(--azul)}
+textarea.entrada{resize:vertical;min-height:150px;font-family:ui-monospace,Menlo,monospace;font-size:13px;line-height:1.55}
+.fila{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pila{display:flex;flex-direction:column;gap:14px}
+.segmentos{display:flex;background:var(--papel-2);border-radius:10px;padding:3px;gap:3px;flex-wrap:wrap}
+.segmentos label{flex:1;text-align:center;min-width:0}
+.segmentos input{position:absolute;opacity:0;pointer-events:none}
+.segmentos span{display:block;padding:6px 8px;border-radius:8px;font-weight:800;font-size:13px;cursor:pointer;white-space:nowrap}
+.segmentos input:checked+span{background:var(--indigo);color:#fff}
+.segmentos input:focus-visible+span{outline:3px solid var(--amarillo)}
+.ayuda{font-size:12.5px;color:var(--gris);margin:0}
+.check{display:flex;gap:8px;align-items:center;font-weight:700}
+
+.canciones-cab{display:flex;align-items:center;gap:10px;margin:18px 0 10px;flex-wrap:wrap}
+.canciones-cab h3{font-size:22px}
+.contador{background:var(--indigo);color:#fff;border-radius:99px;padding:2px 10px;font-weight:900;font-size:13px;font-variant-numeric:tabular-nums}
+.lista-canciones{display:flex;flex-direction:column;gap:8px}
+.cancion{display:grid;grid-template-columns:26px 120px minmax(0,1fr) auto;gap:12px;align-items:center;
+  border:2px solid var(--linea);border-radius:14px;padding:8px}
+.cancion.sin-video{border-color:#f5b3b1;background:#fff6f6}
+.cancion .num{font:400 20px var(--display);color:var(--gris);text-align:center;font-variant-numeric:tabular-nums}
+.miniatura{position:relative;width:120px;aspect-ratio:16/9;border-radius:9px;overflow:hidden;background:var(--papel-2);
+  border:0;padding:0;display:grid;place-items:center;color:var(--gris);font-size:12px;font-weight:800}
+.miniatura img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.miniatura .play{position:relative;width:34px;height:34px;border-radius:50%;background:#000a;color:#fff;display:grid;place-items:center;font-size:13px;opacity:0;transition:opacity .15s}
+.miniatura:hover .play,.miniatura:focus-visible .play{opacity:1}
+.cancion .datos{display:grid;grid-template-columns:1fr 1fr;gap:6px;min-width:0}
+.cancion .datos .entrada{padding:5px 8px;font-weight:700}
+.cancion .video-fila{grid-column:1/-1;display:flex;gap:6px;align-items:center;min-width:0}
+.cancion select.entrada{padding:4px 6px;font-size:12.5px;font-weight:600;flex:1;min-width:0}
+.inicio{display:flex;align-items:center;gap:4px;flex:none}
+.inicio .entrada{width:62px;text-align:center;padding:4px;font-size:13px;font-variant-numeric:tabular-nums}
+.inicio .entrada.estil{width:104px;font-variant-numeric:normal}
+.inicio label{font-size:12px;font-weight:800;color:var(--gris)}
+.estado{font-size:12.5px;font-weight:700;color:var(--gris)}
+.estado.error{color:var(--rojo)}
+.cancion .lado{display:flex;flex-direction:column;gap:2px}
+@media (max-width:620px){
+  .cancion{grid-template-columns:96px minmax(0,1fr) auto}
+  .cancion .num{display:none}
+  .miniatura{width:96px}
+  .cancion .datos{grid-template-columns:1fr}
+  .cancion .video-fila{flex-wrap:wrap}
+}
+.barra-editor{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:8px;align-items:center;flex-wrap:wrap;
+  background:var(--noche);border-radius:16px;padding:10px 12px;margin-bottom:16px;box-shadow:0 6px 18px #0006}
+.barra-editor .guardado{color:#b7bcf5;font-weight:700;font-size:13px}
+
+/* ---------- modal vista previa ---------- */
+.modal{position:fixed;inset:0;background:#070a2ccc;display:grid;place-items:center;padding:16px;z-index:50}
+.modal .caja{background:var(--papel);border-radius:20px;padding:16px;width:min(720px,100%);display:flex;flex-direction:column;gap:12px}
+.modal .caja h3{font-size:22px}
+.marco{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden}
+.marco iframe,.marco>div{position:absolute;inset:0;width:100%;height:100%}
+.reloj{font:400 22px var(--display);font-variant-numeric:tabular-nums;min-width:70px}
+
+/* ---------- juego ---------- */
+.juego{color:#fff;display:flex;flex-direction:column;gap:16px;max-width:1000px;margin:0 auto}
+.juego-cab{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.chapa{background:var(--noche);border-radius:99px;padding:6px 16px;font:400 20px var(--display);font-variant-numeric:tabular-nums;box-shadow:0 3px 0 #0005}
+.chapa em{font-style:normal;color:var(--amarillo)}
+.pregunta{font:400 clamp(28px,4.4vw,46px)/1 var(--display);text-align:center;text-transform:uppercase;text-shadow:0 4px 0 var(--noche)}
+.escenario{position:relative;width:min(640px,100%);margin:0 auto;aspect-ratio:16/9;border-radius:22px;overflow:hidden;
+  background:#000;box-shadow:0 0 0 6px var(--amarillo),0 12px 0 6px var(--noche)}
+.escenario #jugador{position:absolute;inset:0;width:100%;height:100%}
+.tapa{position:absolute;inset:0;display:grid;place-items:center;
+  background:radial-gradient(circle at 50% 50%,#3a41c9,var(--indigo) 70%)}
+/* se tapa al instante (nunca deja ver el vídeo nuevo) y solo se destapa con fundido */
+.tapa.fuera{opacity:0;pointer-events:none;transition:opacity .5s}
+.tapa-contenido{display:flex;align-items:center;gap:clamp(16px,5vw,44px)}
+.vinilo{width:clamp(110px,24vw,190px);aspect-ratio:1;border-radius:50%;
+  background:
+    radial-gradient(circle,var(--amarillo) 0 6%,var(--rojo) 7% 27%,#111 28% 30%,transparent 31%),
+    repeating-radial-gradient(circle,#1b1b1b 0 2px,#262626 3px 5px);
+  box-shadow:0 0 0 4px #000,0 10px 30px #0008}
+.vinilo.gira{animation:giro 1.8s linear infinite}
+@keyframes giro{to{transform:rotate(360deg)}}
+.cuenta{position:relative;width:clamp(96px,20vw,150px);aspect-ratio:1}
+.cuenta svg{width:100%;height:100%;transform:rotate(-90deg)}
+.cuenta circle{fill:none;stroke-width:10}
+.cuenta .pista{stroke:#ffffff26}
+.cuenta .arco{stroke:var(--amarillo);stroke-linecap:round;transition:stroke-dashoffset .1s linear}
+.cuenta .arco.poco{stroke:var(--rojo)}
+.cuenta b{position:absolute;inset:0;display:grid;place-items:center;font:400 clamp(40px,8vw,64px)/1 var(--display);font-variant-numeric:tabular-nums}
+.tapa-msg{position:absolute;left:0;right:0;bottom:12px;text-align:center;font-weight:800;color:#dfe2ff;padding-inline:16px}
+.ondas{display:flex;gap:5px;align-items:flex-end;height:26px;justify-content:center}
+.ondas i{width:6px;background:var(--amarillo);border-radius:3px;height:30%;animation:onda .9s ease-in-out infinite}
+.ondas i:nth-child(2){animation-delay:-.2s}.ondas i:nth-child(3){animation-delay:-.45s}.ondas i:nth-child(4){animation-delay:-.1s}.ondas i:nth-child(5){animation-delay:-.6s}
+.ondas.quieto i{animation:none;height:30%}
+@keyframes onda{50%{height:100%}}
+
+.opciones{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:620px){.opciones{grid-template-columns:1fr}}
+.opcion{--c:var(--rojo);display:flex;align-items:center;gap:12px;border:0;border-radius:16px;padding:12px 14px;text-align:left;
+  background:var(--c);color:#fff;font:800 clamp(17px,2.2vw,23px)/1.15 var(--texto);box-shadow:0 5px 0 #0006;min-height:68px;
+  transition:transform .08s,opacity .3s,filter .3s}
+.opcion:nth-child(2){--c:var(--azul)}.opcion:nth-child(3){--c:var(--naranja)}.opcion:nth-child(4){--c:#9b4dde}
+.opcion .letra{flex:none;width:40px;height:40px;border-radius:10px;background:#fff;color:var(--c);display:grid;place-items:center;font:400 24px var(--display)}
+.opcion:not(:disabled):hover{transform:translateY(-2px)}
+.opcion:disabled{cursor:default}
+.opcion.bien{background:var(--verde);box-shadow:0 0 0 5px #fff,0 5px 0 5px #0006;animation:salto .5s}
+.opcion.bien .letra{color:var(--verde)}
+.opcion.mal{filter:grayscale(.85) brightness(.75)}
+.opcion.elegida.mal{filter:none;opacity:1;box-shadow:0 0 0 5px var(--noche) inset}
+.opcion.apagada{opacity:.35}
+@keyframes salto{40%{transform:scale(1.05)}}
+.solucion{text-align:center;min-height:34px;font:400 clamp(20px,3vw,28px)/1.2 var(--display);color:var(--amarillo);text-shadow:0 3px 0 var(--noche)}
+.solucion small{display:block;font:800 15px var(--texto);color:#fff;text-shadow:none}
+.mandos{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.teclas{text-align:center;color:#aab0f0;font-size:12.5px;font-weight:700}
+kbd{background:#ffffff22;border-radius:5px;padding:1px 6px;font-family:inherit}
+
+/* ---------- final ---------- */
+.final{color:#fff;text-align:center;display:flex;flex-direction:column;gap:18px;align-items:center}
+.final .nota{font:400 clamp(60px,14vw,130px)/1 var(--display);color:var(--amarillo);text-shadow:0 6px 0 var(--rojo),0 12px 0 var(--noche)}
+.final .nota small{font-size:.45em;color:#fff}
+.resumen{background:var(--papel);color:var(--tinta);border-radius:20px;padding:10px;width:min(760px,100%);text-align:left;display:flex;flex-direction:column}
+.resumen .item{display:grid;grid-template-columns:30px 80px 1fr 28px;gap:12px;align-items:center;padding:6px;border-bottom:1px solid var(--linea)}
+.resumen .item:last-child{border-bottom:0}
+.resumen img{width:80px;aspect-ratio:16/9;object-fit:cover;border-radius:6px;display:block}
+.resumen b{font-weight:900}
+.resumen .item span{color:var(--gris);font-size:13px}
+
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--noche);color:#fff;
+  padding:10px 18px;border-radius:12px;font-weight:800;box-shadow:0 6px 20px #0008;z-index:60;max-width:calc(100% - 32px)}
+/* ---------- elegir modo ---------- */
+.modos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.modos{grid-template-columns:1fr}}
+.modo{border:3px solid var(--linea);background:#fff;color:var(--tinta);border-radius:16px;padding:16px;text-align:left;display:flex;flex-direction:column;gap:6px}
+.modo:hover{border-color:var(--azul)}
+.modo big{font-size:34px;line-height:1}
+.modo b{font:400 22px var(--display)}
+.modo span{color:var(--gris);font-size:13.5px}
+.modos-inicio{width:min(680px,100%);margin:0 auto 22px}
+.modos-inicio .modo{border-color:transparent;opacity:.72;box-shadow:0 5px 0 var(--noche);position:relative;transition:opacity .15s,transform .15s}
+.modos-inicio .modo:hover{opacity:.9}
+.modos-inicio .modo.activo{opacity:1;border-color:var(--amarillo);box-shadow:0 0 0 3px var(--amarillo),0 5px 0 3px var(--noche);transform:translateY(-2px)}
+.modos-inicio .modo.activo::after{content:"✓ Triat";position:absolute;top:12px;right:12px;background:var(--amarillo);color:var(--noche);border-radius:99px;padding:2px 10px;font-weight:900;font-size:12px}
+.paso{color:#b7bcf5;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:12.5px;margin:0 0 10px}
+.interruptor{display:flex;background:#ffffff1a;border-radius:10px;padding:3px;gap:3px}
+.interruptor button{border:0;background:transparent;color:#dfe2ff;border-radius:8px;padding:5px 10px;font-weight:800;font-size:13px}
+.interruptor button[aria-pressed="true"]{background:var(--amarillo);color:var(--noche)}
+
+/* ---------- sala (modo móviles) ---------- */
+.sala{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;background:var(--papel);border-radius:24px;padding:22px;box-shadow:0 6px 0 var(--noche)}
+@media (max-width:700px){.sala{grid-template-columns:1fr;text-align:center}.sala .qr{margin:0 auto}}
+.sala p{margin:0;font-weight:800;color:var(--gris);font-size:18px}
+.sala .url{display:block;font:400 clamp(22px,3.4vw,34px)/1.2 var(--display);color:var(--indigo);word-break:break-all;margin:2px 0 14px}
+.sala .codigo{font:400 clamp(64px,11vw,120px)/1 var(--display);letter-spacing:.08em;color:var(--tinta);font-variant-numeric:tabular-nums}
+.qr{background:#fff;padding:10px;border-radius:14px;border:3px solid var(--linea);width:max-content;max-width:100%}
+.qr img,.qr canvas{display:block;max-width:100%;height:auto}
+.chips{display:flex;flex-wrap:wrap;gap:10px;min-height:60px;align-content:flex-start}
+.chip{background:var(--papel);color:var(--tinta);border-radius:99px;padding:8px 16px;font:400 20px var(--display);box-shadow:0 4px 0 var(--noche);animation:entra .35s}
+@keyframes entra{from{transform:scale(.4);opacity:0}}
+.esperando{color:#b7bcf5;font-weight:800;align-self:center}
+
+/* ---------- conteo por opción y clasificación ---------- */
+.opcion .votos{margin-left:auto;flex:none;min-width:40px;height:34px;padding:0 10px;border-radius:99px;background:#0003;display:grid;place-items:center;font:400 20px var(--display);font-variant-numeric:tabular-nums}
+.clasificacion{width:min(720px,100%);margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.clasificacion h2{text-align:center;font-size:clamp(30px,4.4vw,44px);text-shadow:0 4px 0 var(--noche);margin-bottom:6px}
+.fila-rank{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;background:var(--papel);color:var(--tinta);border-radius:14px;padding:10px 16px;box-shadow:0 4px 0 var(--noche)}
+.fila-rank .pos{font:400 26px var(--display);color:var(--gris);text-align:center}
+.fila-rank .nom{font:400 24px var(--display);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fila-rank .pts{font:900 22px var(--texto);font-variant-numeric:tabular-nums;text-align:right}
+.fila-rank .pts small{display:block;font-size:13px;color:var(--verde);font-weight:900}
+.fila-rank:nth-child(2){background:var(--amarillo)}
+.podio{display:flex;align-items:flex-end;justify-content:center;gap:10px;width:min(620px,100%)}
+.podio div{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0}
+.podio .nom{font:400 clamp(18px,2.6vw,26px)/1.1 var(--display);max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.podio .pts{font-weight:900;color:#dfe2ff;font-variant-numeric:tabular-nums}
+.podio .caja{width:100%;border-radius:14px 14px 0 0;display:grid;place-items:center;font:400 44px var(--display);color:var(--noche)}
+.podio .p1 .caja{height:150px;background:var(--amarillo)}
+.podio .p2 .caja{height:110px;background:#d9dcf2}
+.podio .p3 .caja{height:80px;background:#f0a868}
+
+@media (prefers-reduced-motion:reduce){.chip{animation:none}.vinilo.gira,.ondas i,.opcion.bien{animation:none}}
+</style>
+</head>
+<body>
+<div class="envoltorio">
+  <header class="cabecera">
+    <button class="logo" id="ir-inicio" title="Els meus quizzes">
+      <span class="logo-disco" aria-hidden="true"></span>
+      <b>Endevina <span>la Cançó</span></b>
+    </button>
+    <span class="espacio"></span>
+    <button class="btn fantasma" id="pantalla-completa" hidden>⛶ Pantalla completa</button>
+  </header>
+
+  <div class="aviso" id="aviso-servidor" hidden>
+    Aquesta pàgina necessita el servidor per buscar a YouTube i desar quizzes.
+    Obre <code>Obrir Endevina la Cançó.command</code> (o executa <code>python3 servidor.py</code>) i entra a l'adreça que t'indica.
+  </div>
+
+  <!-- ================= INICIO ================= -->
+  <section id="vista-inicio">
+    <div class="portada">
+      <h1>Endevines <span>la cançó?</span></h1>
+      <p>Enganxa la teva llista de cançons, la web busca cadascuna a YouTube i munta el concurs: sona un tros, surten les opcions i la classe tria.</p>
+      <p class="paso">Com hi jugareu?</p>
+      <div class="modos modos-inicio" role="radiogroup" aria-label="Mode de joc">
+        <button class="modo" role="radio" data-elegir="presentacion"><big>📺</big><b>Presentació</b><span>Tot a la pantalla gran. La classe contesta en veu alta i tu marques l&rsquo;opció.</span></button>
+        <button class="modo" role="radio" data-elegir="movil"><big>📱</big><b>Amb mòbils</b><span>Tipus Kahoot: entren amb un codi o el QR i responen des del mòbil. Punts per encertar i per rapidesa.</span></button>
+      </div>
+      <div class="fila" style="justify-content:center">
+        <button class="btn primario grande" id="nuevo-quiz">＋ Crear un quiz</button>
+        <label class="btn fantasma grande" for="importar">⤓ Importar .json</label>
+        <input type="file" id="importar" accept=".json,application/json" hidden>
+      </div>
+    </div>
+    <div class="titulo-seccion"><h2>Els meus quizzes</h2><small id="n-quizzes"></small></div>
+    <div class="rejilla" id="lista-quizzes"></div>
+  </section>
+
+  <!-- ================= EDITOR ================= -->
+  <section id="vista-editor" hidden>
+    <div class="barra-editor">
+      <button class="btn fantasma mini" id="ed-volver">← Els meus quizzes</button>
+      <span class="espacio" style="flex:1"></span>
+      <span class="guardado" id="ed-estado-guardado"></span>
+      <button class="btn fantasma mini" id="ed-exportar">⤒ Exportar</button>
+      <button class="btn mini" id="ed-guardar">💾 Desar</button>
+      <div class="interruptor" role="group" aria-label="Mode de joc">
+        <button data-elegir="presentacion">📺 Presentació</button>
+        <button data-elegir="movil">📱 Mòbils</button>
+      </div>
+      <button class="btn primario" id="ed-jugar">▶ Jugar</button>
+    </div>
+
+    <div class="editor">
+      <div class="panel">
+        <label class="campo"><span>Nom del quiz</span>
+          <input class="nombre-quiz" id="ed-nombre" placeholder="Èxits dels 2000" maxlength="80">
+        </label>
+
+        <div class="canciones-cab">
+          <h3>Cançons</h3><span class="contador" id="ed-contador">0</span>
+          <span class="espacio" style="flex:1"></span>
+          <button class="btn mini" id="ed-rebuscar" title="Torna a buscar les que no tenen vídeo">🔎 Buscar les que falten</button>
+        </div>
+        <div class="lista-canciones" id="ed-lista"></div>
+        <p class="ayuda" id="ed-vacia" style="margin-top:10px">Encara no hi ha cançons. Enganxa la teva llista al plafó de la dreta.</p>
+      </div>
+
+      <div class="pila">
+        <div class="panel pila">
+          <label class="campo"><span>Enganxa la teva llista (una per línia)</span>
+            <textarea class="entrada" id="ed-pegar" placeholder="Txarango - Tanca els ulls&#10;Rosalía - Malamente&#10;Estopa - Como Camarón @0:50&#10;Manel - Al mar https://youtu.be/..."></textarea>
+          </label>
+          <div class="segmentos" role="radiogroup" aria-label="Format de la llista">
+            <label><input type="radio" name="formato" value="artista-titulo" checked><span>Artista - Cançó</span></label>
+            <label><input type="radio" name="formato" value="titulo-artista"><span>Cançó - Artista</span></label>
+          </div>
+          <button class="btn primario" id="ed-anadir">🔎 Afegir i buscar a YouTube</button>
+          <p class="ayuda">Opcional a cada línia: <b>@1:05</b> per triar on comença el tros, o un enllaç de YouTube per fer servir aquell vídeo exacte.</p>
+        </div>
+
+        <div class="panel pila">
+          <div class="campo"><span>Què s&rsquo;ha d&rsquo;endevinar?</span>
+            <div class="segmentos" role="radiogroup">
+              <label><input type="radio" name="pregunta" value="artista"><span>Artista</span></label>
+              <label><input type="radio" name="pregunta" value="cancion"><span>Cançó</span></label>
+              <label><input type="radio" name="pregunta" value="ambos"><span>Totes dues</span></label>
+              <label><input type="radio" name="pregunta" value="estil"><span>Estil</span></label>
+            </div>
+          </div>
+          <div class="campo"><span>Durada del tros</span>
+            <div class="segmentos" role="radiogroup">
+              <label><input type="radio" name="duracion" value="3"><span>3 s</span></label>
+              <label><input type="radio" name="duracion" value="5"><span>5 s</span></label>
+              <label><input type="radio" name="duracion" value="10"><span>10 s</span></label>
+              <label><input type="radio" name="duracion" value="15"><span>15 s</span></label>
+            </div>
+          </div>
+          <div class="campo"><span>Temps per respondre al mòbil</span>
+            <div class="segmentos" role="radiogroup">
+              <label><input type="radio" name="tiempo" value="10"><span>10 s</span></label>
+              <label><input type="radio" name="tiempo" value="15"><span>15 s</span></label>
+              <label><input type="radio" name="tiempo" value="20"><span>20 s</span></label>
+              <label><input type="radio" name="tiempo" value="30"><span>30 s</span></label>
+            </div>
+            <p class="ayuda">Compta des que comença a sonar. Si tothom respon abans, es revela sola.</p>
+          </div>
+          <div class="campo"><span>Opcions per pregunta</span>
+            <div class="segmentos" role="radiogroup">
+              <label><input type="radio" name="opciones" value="2"><span>2</span></label>
+              <label><input type="radio" name="opciones" value="3"><span>3</span></label>
+              <label><input type="radio" name="opciones" value="4"><span>4</span></label>
+            </div>
+          </div>
+          <label class="campo"><span>Inici per defecte de les noves</span>
+            <input class="entrada" id="ed-inicio-def" value="0:30" style="width:90px">
+          </label>
+          <label class="check"><input type="checkbox" id="ed-aleatorio"> Ordre aleatori en jugar</label>
+          <label class="campo"><span>Noms extra per a les opcions falses</span>
+            <textarea class="entrada" id="ed-extra" style="min-height:70px" placeholder="Un per línia. Útil si hi ha poques cançons o diverses del mateix artista."></textarea>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SALA (modo móviles) ================= -->
+  <section id="vista-sala" hidden>
+    <div class="pila">
+      <div class="sala">
+        <div>
+          <p>Entra des del mòbil o el portàtil a</p>
+          <b class="url" id="s-url"></b>
+          <button class="btn mini" id="s-copiar">⧉ Copiar l'enllaç</button>
+          <p style="margin-top:14px">amb el codi</p>
+          <div class="codigo" id="s-codigo">····</div>
+        </div>
+        <div class="qr" id="s-qr" aria-label="Codi QR per entrar"></div>
+      </div>
+      <div class="titulo-seccion"><h2>Jugadors</h2><small id="s-n">0 a dins</small></div>
+      <div class="chips" id="s-jugadores"></div>
+      <div class="mandos">
+        <button class="btn fantasma grande" id="s-cancelar">✕ Cancel·lar</button>
+        <button class="btn primario grande" id="s-empezar" disabled>▶ Començar</button>
+      </div>
+      <p class="teclas">Els mòbils han d&rsquo;estar a la mateixa wifi que aquest ordinador.</p>
+    </div>
+  </section>
+
+  <!-- ================= JUEGO ================= -->
+  <section id="vista-juego" hidden>
+    <div class="juego">
+      <div class="juego-cab">
+        <button class="btn fantasma mini" id="j-salir">← Tornar al menú</button>
+        <span class="espacio" style="flex:1"></span>
+        <span class="chapa">Ronda <em id="j-ronda">1</em> / <span id="j-total">20</span></span>
+        <span class="chapa"><span id="j-marcador-txt">Encerts</span> <em id="j-aciertos">0</em></span>
+      </div>
+      <div class="clasificacion" id="j-ranking" hidden></div>
+      <div class="pregunta" id="j-pregunta">Qui canta?</div>
+      <div class="escenario">
+        <div id="jugador"></div>
+        <div class="tapa" id="j-tapa">
+          <div class="tapa-contenido">
+            <div class="vinilo" id="j-vinilo"></div>
+            <div class="cuenta">
+              <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="pista" cx="60" cy="60" r="52"/><circle class="arco" id="j-arco" cx="60" cy="60" r="52"/></svg>
+              <b id="j-numero">10</b>
+            </div>
+          </div>
+          <div class="tapa-msg" id="j-msg">
+            <div class="ondas quieto" id="j-ondas"><i></i><i></i><i></i><i></i><i></i></div>
+            <span id="j-msg-texto">Preparant…</span>
+          </div>
+        </div>
+      </div>
+      <div class="solucion" id="j-solucion"></div>
+      <div class="opciones" id="j-opciones"></div>
+      <div class="mandos">
+        <button class="btn grande" id="j-repetir">↺ Repetir el tros</button>
+        <button class="btn grande primario" id="j-principal">▶ Escoltar</button>
+      </div>
+      <div class="teclas" id="j-teclas"><kbd>Espai</kbd> escoltar / revelar · <kbd>1</kbd>–<kbd>4</kbd> triar · <kbd>R</kbd> repetir · <kbd>→</kbd> següent</div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL ================= -->
+  <section id="vista-final" hidden>
+    <div class="final">
+      <h2 style="font-size:34px">Fi del quiz!</h2>
+      <div class="podio" id="f-podio" hidden></div>
+      <div class="nota" id="f-nota"></div>
+      <p id="f-frase" style="font-size:19px;font-weight:800;margin:0"></p>
+      <div class="fila" style="justify-content:center">
+        <button class="btn primario grande" id="f-otra">↺ Tornar a jugar</button>
+        <button class="btn grande" id="f-editar">✎ Editar el quiz</button>
+        <button class="btn fantasma grande" id="f-inicio">Els meus quizzes</button>
+      </div>
+      <div class="resumen" id="f-resumen"></div>
+    </div>
+  </section>
+</div>
+
+<!-- vista prèvia del tros -->
+<div class="modal" id="modal" hidden>
+  <div class="caja" role="dialog" aria-modal="true" aria-labelledby="m-titulo">
+    <div class="fila"><h3 id="m-titulo" style="flex:1">Tria on comença el tros</h3><button class="btn-icono" id="m-cerrar" aria-label="Tancar">✕</button></div>
+    <div class="marco"><div id="m-jugador"></div></div>
+    <div class="fila">
+      <span class="reloj" id="m-reloj">0:00</span>
+      <button class="btn mini" data-salto="-5">−5 s</button>
+      <button class="btn mini" data-salto="5">+5 s</button>
+      <button class="btn mini" id="m-probar">▶ Provar el tros</button>
+      <span style="flex:1"></span>
+      <button class="btn primario" id="m-usar">Començar aquí</button>
+    </div>
+    <p class="ayuda">Mou el vídeo fins al moment que vulguis (la tornada sol funcionar millor) i prem <b>Començar aquí</b>. <b>Provar el tros</b> sona només els segons que dura la pregunta.</p>
+  </div>
+</div>
+
+<datalist id="estils"></datalist>
+<div class="modal" id="modal-si-no" hidden>
+  <div class="caja" role="dialog" aria-modal="true" aria-labelledby="sn-text" style="max-width:460px">
+    <h3 id="sn-text" style="font-size:22px"></h3>
+    <div class="fila" style="justify-content:flex-end">
+      <button class="btn" id="sn-no">Cancel·lar</button>
+      <button class="btn rojo" id="sn-si">Sí</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script>
+/* ================================================================ utilidades */
+const $ = s => document.querySelector(s);
+const VISTAS = ['inicio','editor','sala','juego','final'];
+function mostrar(v){
+  VISTAS.forEach(n => $('#vista-'+n).hidden = n !== v);
+  $('#pantalla-completa').hidden = v !== 'juego';
+  window.scrollTo(0,0);
+}
+let snResol=null;
+function confirmar(text, siText='Sí'){
+  $('#sn-text').textContent=text; $('#sn-si').textContent=siText;
+  $('#modal-si-no').hidden=false; $('#sn-si').focus();
+  return new Promise(r=>{ snResol=r; });
+}
+function tancarSiNo(v){
+  $('#modal-si-no').hidden=true;
+  const r=snResol; snResol=null; if(r) r(v);
+}
+$('#sn-si').onclick=()=>tancarSiNo(true);
+$('#sn-no').onclick=()=>tancarSiNo(false);
+$('#modal-si-no').addEventListener('click',e=>{ if(e.target.id==='modal-si-no') tancarSiNo(false); });
+document.addEventListener('keydown',e=>{ if(!$('#modal-si-no').hidden && e.key==='Escape') tancarSiNo(false); });
+
+let toastT;
+function toast(msg, ms=2400){
+  const t=$('#toast'); t.textContent=msg; t.hidden=false;
+  clearTimeout(toastT); toastT=setTimeout(()=>t.hidden=true, ms);
+}
+function aSegundos(txt){
+  txt=String(txt||'').trim(); if(!txt) return 0;
+  const p=txt.split(':').map(Number);
+  if(p.some(isNaN)) return 0;
+  return p.reduce((a,n)=>a*60+n,0);
+}
+function aReloj(s){ s=Math.max(0,Math.floor(s)); return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); }
+function mezclar(a){ a=[...a]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+function idYoutube(url){
+  const m=String(url).match(/(?:youtu\.be\/|v=|\/shorts\/|\/embed\/)([\w-]{11})/);
+  return m?m[1]:null;
+}
+const miniatura = id => `https://i.ytimg.com/vi/${id}/mqdefault.jpg`;
+const esc = s => String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm = s => String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').trim().toLowerCase();
+
+async function api(ruta, opts={}){
+  const r = await fetch(ruta, {headers:{'Content-Type':'application/json'}, ...opts});
+  const datos = await r.json().catch(()=>({}));
+  if(!r.ok) throw new Error(datos.error || 'Error '+r.status);
+  return datos;
+}
+
+/* ================================================================ YouTube API */
+const ytListo = new Promise(res => {
+  window.onYouTubeIframeAPIReady = res;
+  const s=document.createElement('script'); s.src='https://www.youtube.com/iframe_api'; document.head.appendChild(s);
+});
+const ERRORES_YT = {2:'identificador no vàlid',5:'error del reproductor',100:'el vídeo ja no existeix',101:'el propietari no deixa incrustar-lo',150:'el propietari no deixa incrustar-lo',153:'obre la web des del servidor, no com a fitxer'};
+
+/* ================================================================ INICIO */
+async function cargarInicio(){
+  mostrar('inicio');
+  const cont=$('#lista-quizzes');
+  try{
+    const {quizzes}=await api('/api/quizzes');
+    $('#aviso-servidor').hidden=true;
+    $('#n-quizzes').textContent = quizzes.length ? quizzes.length+(quizzes.length===1?' desat':' desats') : '';
+    if(!quizzes.length){
+      cont.innerHTML='<div class="vacio">Encara no has desat cap quiz. Crea el primer amb <b>＋ Crear un quiz</b>.</div>';
+      return;
+    }
+    const COLORES=['var(--rojo)','var(--azul)','var(--naranja)','#9b4dde','var(--verde)'];
+    cont.innerHTML = quizzes.map((q,i)=>{
+      return `<article class="tarjeta">
+        <div class="cubierta" style="--c:${COLORES[i%COLORES.length]}"><div class="vinilo"></div><b>${q.total}</b></div>
+        <div class="cuerpo">
+          <h3>${esc(q.nombre)}</h3>
+          <div class="meta">${q.total} cançons · ${new Date(q.modificado*1000).toLocaleDateString('ca-ES',{day:'numeric',month:'short',year:'numeric'})}</div>
+          <div class="acciones">
+            <button class="btn primario mini" data-jugar="${q.id}">▶ Jugar</button>
+            <button class="btn mini" data-editar="${q.id}">✎ Editar</button>
+            <span style="flex:1"></span>
+            <button class="btn-icono" data-borrar="${q.id}" data-nombre="${esc(q.nombre)}" aria-label="Esborrar" title="Esborrar">🗑</button>
+          </div>
+        </div></article>`;
+    }).join('');
+    pintarModo();
+  }catch(e){
+    $('#aviso-servidor').hidden=false;
+    cont.innerHTML='';
+  }
+}
+$('#lista-quizzes').addEventListener('click', async e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  if(b.dataset.jugar){ jugar(await api('/api/quizzes/'+b.dataset.jugar)); }
+  if(b.dataset.editar){ abrirEditor(await api('/api/quizzes/'+b.dataset.editar)); }
+  if(b.dataset.borrar && await confirmar(`Vols esborrar «${b.dataset.nombre}»? No es pot desfer.`,'Esborrar')){
+    await api('/api/quizzes/'+b.dataset.borrar,{method:'DELETE'}); toast('Quiz esborrat'); cargarInicio();
+  }
+});
+$('#nuevo-quiz').onclick = ()=>abrirEditor(null);
+$('#ir-inicio').onclick = ()=>salirA(()=>{ cerrarSala(); cargarInicio(); });
+$('#importar').onchange = async e=>{
+  const f=e.target.files[0]; e.target.value=''; if(!f) return;
+  try{
+    const q=JSON.parse(await f.text());
+    if(!Array.isArray(q.canciones)) throw 0;
+    delete q.id;
+    abrirEditor(q); sucio=true; pintarGuardado();
+    toast('Importat. Prem Desar per quedar-te\'l.');
+  }catch{ toast('Aquest fitxer no és un quiz vàlid'); }
+};
+
+/* ================================================================ EDITOR */
+const AJUSTES_DEF = {pregunta:'artista', duracion:5, tiempo:15, opciones:4, inicio:30, aleatorio:false, extra:[]};
+const ESTILS = ['Rock','Pop','Reggaeton','Electrònica','Hip-hop','Funk','Metal','Rumba','Ska','Punk','Indie','Country','Jazz','Flamenc','Clàssica','Disco'];
+const MAX_TROZO = 15;       // segundos máximos de trozo
+const MAX_REVELADO = 15;    // segundos que suena el vídeo tras revelar
+let quiz=null, sucio=false;
+
+function abrirEditor(q){
+  quiz = q ? structuredClone(q) : {nombre:'', ajustes:{...AJUSTES_DEF}, canciones:[]};
+  quiz.ajustes = {...AJUSTES_DEF, ...quiz.ajustes};
+  quiz.ajustes.duracion = Math.min(MAX_TROZO, quiz.ajustes.duracion);
+  sucio=false;
+  $('#ed-nombre').value=quiz.nombre||'';
+  for(const k of ['pregunta','duracion','tiempo','opciones']){
+    const r=document.querySelector(`input[name="${k}"][value="${quiz.ajustes[k]}"]`); if(r) r.checked=true;
+  }
+  $('#ed-inicio-def').value=aReloj(quiz.ajustes.inicio);
+  $('#ed-aleatorio').checked=!!quiz.ajustes.aleatorio;
+  $('#ed-extra').value=(quiz.ajustes.extra||[]).join('\n');
+  $('#ed-pegar').value='';
+  pintarLista(); pintarGuardado();
+  mostrar('editor');
+  if(!quiz.canciones.length) $('#ed-pegar').focus();
+}
+function cambiado(){ sucio=true; pintarGuardado(); }
+function pintarGuardado(){
+  $('#ed-estado-guardado').textContent = sucio ? 'Canvis sense desar' : (quiz?.id ? 'Desat' : '');
+}
+
+function pintarLista(){
+  const lista=$('#ed-lista');
+  const usats=[...new Set([...quiz.canciones.map(c=>c.estil).filter(Boolean), ...ESTILS])];
+  $('#estils').innerHTML=usats.map(e=>`<option value="${esc(e)}">`).join('');
+  $('#ed-contador').textContent=quiz.canciones.length;
+  $('#ed-vacia').hidden=quiz.canciones.length>0;
+  lista.innerHTML = quiz.canciones.map((c,i)=>{
+    const v=c.video;
+    const res=c.resultados||[];
+    const opciones = res.map(r=>`<option value="${r.id}" ${v&&v.id===r.id?'selected':''}>${esc(r.titulo)} · ${esc(r.canal)} (${r.duracion})</option>`).join('');
+    const extraActual = v && !res.some(r=>r.id===v.id) ? `<option value="${v.id}" selected>${esc(v.titulo||'Vídeo triat a mà')}</option>` : '';
+    return `<div class="cancion ${v?'':'sin-video'}" data-i="${i}">
+      <span class="num">${i+1}</span>
+      <button class="miniatura" data-accion="preview" ${v?'':'disabled'} aria-label="Triar l&rsquo;inici del tros">
+        ${v?`<img src="${miniatura(v.id)}" alt=""><span class="play">▶</span>`: (c.buscando?'Buscant…':'Sense vídeo')}
+      </button>
+      <div class="datos">
+        <input class="entrada" data-campo="artista" value="${esc(c.artista)}" placeholder="Artista" aria-label="Artista">
+        <input class="entrada" data-campo="titulo" value="${esc(c.titulo)}" placeholder="Cançó" aria-label="Cançó">
+        <div class="video-fila">
+          ${c.buscando ? '<span class="estado">Buscant a YouTube…</span>'
+            : c.error ? `<span class="estado error">${esc(c.error)}</span>`
+            : `<select class="entrada" data-campo="video" aria-label="Vídeo">${extraActual}${opciones}<option value="__enlace">Enganxar un enllaç de YouTube…</option></select>`}
+          <span class="inicio"><label for="est-${i}">estil</label><input class="entrada estil" id="est-${i}" data-campo="estil" list="estils" value="${esc(c.estil||'')}" placeholder="—"></span>
+          <span class="inicio"><label for="ini-${i}">des de</label><input class="entrada" id="ini-${i}" data-campo="inicio" value="${aReloj(c.inicio)}"></span>
+        </div>
+      </div>
+      <div class="lado">
+        <button class="btn-icono" data-accion="buscar" title="Tornar a buscar" aria-label="Tornar a buscar">🔄</button>
+        <button class="btn-icono" data-accion="borrar" title="Treure" aria-label="Treure">🗑</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function parsearLista(texto, formato){
+  const inicioDef=quiz.ajustes.inicio;
+  return texto.split('\n').map(linea=>{
+    let l=linea.trim(); if(!l) return null;
+    l=l.replace(/^\d+\s*[.)-]\s+/,'');
+    let video=null, inicio=inicioDef;
+    const url=l.match(/https?:\/\/\S+/);
+    if(url){ const id=idYoutube(url[0]); if(id) video={id,titulo:''}; l=l.replace(url[0],''); }
+    let estil='';
+    const es=l.match(/#\s*([\wÀ-ÿ&·'\- ]+)/);
+    if(es){ estil=es[1].trim(); l=l.replace(es[0],''); }
+    const t=l.match(/@\s*(\d+:\d{1,2}|\d+)/);
+    if(t){ inicio=aSegundos(t[1]); l=l.replace(t[0],''); }
+    l=l.replace(/[|,;]\s*$/,'').trim();
+    let partes=l.split(/\s+[-–—]\s+/);
+    if(partes.length<2) partes=l.split(/\s*[-–—]\s*/);
+    let artista, titulo;
+    if(partes.length<2){ artista=''; titulo=l; }
+    else if(formato==='titulo-artista'){ titulo=partes[0]; artista=partes.slice(1).join(' - '); }
+    else { artista=partes[0]; titulo=partes.slice(1).join(' - '); }
+    return {artista:artista.trim(), titulo:titulo.trim(), estil, inicio, video, resultados:[]};
+  }).filter(Boolean);
+}
+
+async function buscarCancion(c){
+  c.buscando=true; c.error=null; pintarLista();
+  try{
+    const q=[c.artista,c.titulo].filter(Boolean).join(' ');
+    let {resultados}=await api('/api/buscar?q='+encodeURIComponent(q));
+    // YouTube tapa algunes cerques amb «Confirma la teva edat»: hi tornem només amb el títol
+    if(!resultados.length && c.titulo && c.artista)
+      resultados=(await api('/api/buscar?q='+encodeURIComponent(c.titulo))).resultados;
+    c.resultados=resultados;
+    if(!c.video && resultados[0]) c.video=resultados[0];
+    if(!resultados.length) c.error='Sense resultats que es puguin incrustar. Prova de corregir el nom o enganxa un enllaç.';
+  }catch(e){ c.error=e.message; }
+  c.buscando=false; cambiado(); pintarLista();
+}
+async function buscarVarias(lista){
+  const cola=[...lista];
+  const trabajador=async()=>{ while(cola.length) await buscarCancion(cola.shift()); };
+  await Promise.all([trabajador(),trabajador(),trabajador()]);
+}
+
+$('#ed-anadir').onclick = async ()=>{
+  const formato=document.querySelector('input[name="formato"]:checked').value;
+  const nuevas=parsearLista($('#ed-pegar').value, formato);
+  if(!nuevas.length){ toast('Enganxa almenys una cançó'); return; }
+  quiz.canciones.push(...nuevas); $('#ed-pegar').value=''; cambiado(); pintarLista();
+  toast(`${nuevas.length} ${nuevas.length===1?'cançó afegida':'cançons afegides'}. Buscant a YouTube…`);
+  await buscarVarias(nuevas);
+  const sin=nuevas.filter(c=>!c.video).length;
+  toast(sin?`Fet. ${sin} sense vídeo: revisa-les en vermell.`:'Totes trobades!');
+};
+$('#ed-rebuscar').onclick = ()=>{
+  const faltan=quiz.canciones.filter(c=>!c.video);
+  if(!faltan.length){ toast('Totes les cançons tenen vídeo'); return; }
+  buscarVarias(faltan);
+};
+
+$('#ed-lista').addEventListener('change', e=>{
+  const fila=e.target.closest('.cancion'); if(!fila) return;
+  const c=quiz.canciones[+fila.dataset.i], campo=e.target.dataset.campo;
+  if(campo==='artista'||campo==='titulo'||campo==='estil'){ c[campo]=e.target.value.trim(); cambiado(); }
+  if(campo==='inicio'){ c.inicio=aSegundos(e.target.value); e.target.value=aReloj(c.inicio); cambiado(); }
+  if(campo==='video'){
+    if(e.target.value==='__enlace'){
+      const url=prompt('Enganxa l\'enllaç del vídeo de YouTube:');
+      const id=url&&idYoutube(url);
+      if(id){ c.video={id,titulo:'Vídeo triat a mà'}; c.error=null; cambiado(); }
+      else if(url) toast('No reconec aquest enllaç de YouTube');
+    }else{
+      c.video=(c.resultados||[]).find(r=>r.id===e.target.value)||c.video; cambiado();
+    }
+    pintarLista();
+  }
+});
+$('#ed-lista').addEventListener('click', e=>{
+  const b=e.target.closest('[data-accion]'); if(!b) return;
+  const i=+b.closest('.cancion').dataset.i, c=quiz.canciones[i];
+  if(b.dataset.accion==='borrar'){ quiz.canciones.splice(i,1); cambiado(); pintarLista(); }
+  if(b.dataset.accion==='buscar'){ buscarCancion(c); }
+  if(b.dataset.accion==='preview'){ abrirPreview(c); }
+});
+
+$('#ed-nombre').oninput = e=>{ quiz.nombre=e.target.value; cambiado(); };
+document.querySelectorAll('#vista-editor input[type=radio]:not([name=formato])').forEach(r=>r.onchange=()=>{
+  quiz.ajustes[r.name]= r.name==='pregunta' ? r.value : +r.value; cambiado();
+});
+$('#ed-inicio-def').onchange = e=>{ quiz.ajustes.inicio=aSegundos(e.target.value); e.target.value=aReloj(quiz.ajustes.inicio); cambiado(); };
+$('#ed-aleatorio').onchange = e=>{ quiz.ajustes.aleatorio=e.target.checked; cambiado(); };
+$('#ed-extra').onchange = e=>{ quiz.ajustes.extra=e.target.value.split('\n').map(s=>s.trim()).filter(Boolean); cambiado(); };
+
+function quizLimpio(){
+  const q=structuredClone(quiz);
+  q.canciones=q.canciones.map(({buscando,error,...c})=>c);
+  return q;
+}
+async function guardar(){
+  if(!quiz.nombre.trim()){ quiz.nombre='Quiz del '+new Date().toLocaleDateString('ca-ES'); $('#ed-nombre').value=quiz.nombre; }
+  try{
+    const {id}=await api('/api/quizzes',{method:'POST',body:JSON.stringify(quizLimpio())});
+    quiz.id=id; sucio=false; pintarGuardado(); toast('Quiz desat');
+    return true;
+  }catch(e){ toast('No s\'ha pogut desar: '+e.message, 4000); return false; }
+}
+$('#ed-guardar').onclick = guardar;
+$('#ed-exportar').onclick = ()=>{
+  const blob=new Blob([JSON.stringify(quizLimpio(),null,2)],{type:'application/json'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download=(quiz.nombre||'quiz').replace(/[^\w\sáéíóúñü-]/gi,'').trim()+'.json'; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+};
+$('#ed-jugar').onclick = ()=>{
+  if(quiz.canciones.some(c=>c.buscando)){ toast('Espera que acabi la cerca'); return; }
+  if(!quiz.canciones.filter(c=>c.video).length){ toast('Afegeix almenys una cançó amb vídeo'); return; }
+  if(quiz.ajustes.pregunta==='estil'){
+    const sense=quiz.canciones.filter(c=>c.video && !c.estil).length;
+    if(sense){ toast(`${sense} ${sense===1?'cançó no té':'cançons no tenen'} estil: omple la casella «estil»`,4000); return; }
+  }
+  jugar(quizLimpio(), true);
+};
+$('#ed-volver').onclick = ()=>salirA(cargarInicio);
+async function salirA(fn){
+  if(!$('#vista-editor').hidden && sucio && !(await confirmar('Hi ha canvis sense desar. Vols sortir igualment?','Sortir'))) return;
+  pararJuego(); sucio=false; fn();
+}
+window.addEventListener('beforeunload', e=>{ if(sucio && !$('#vista-editor').hidden){ e.preventDefault(); e.returnValue=''; } });
+
+/* ---------- vista previa / elegir inicio ---------- */
+let mPlayer=null, mCancion=null, mTick=null, mParar=null;
+async function abrirPreview(c){
+  mCancion=c; $('#modal').hidden=false;
+  $('#m-titulo').textContent=[c.artista,c.titulo].filter(Boolean).join(' – ')||'Tria on comença el tros';
+  await ytListo;
+  if(!mPlayer){
+    mPlayer=new YT.Player('m-jugador',{videoId:c.video.id,playerVars:{start:c.inicio,rel:0,playsinline:1,modestbranding:1,hl:'ca',origin:location.origin},
+      events:{onReady:e=>e.target.playVideo(), onError:e=>toast('No es pot reproduir: '+(ERRORES_YT[e.data]||e.data),4000)}});
+  }else{
+    mPlayer.loadVideoById({videoId:c.video.id,startSeconds:c.inicio});
+  }
+  clearInterval(mTick);
+  mTick=setInterval(()=>{ if(mPlayer?.getCurrentTime) $('#m-reloj').textContent=aReloj(mPlayer.getCurrentTime()); },250);
+}
+function cerrarPreview(){
+  $('#modal').hidden=true; clearInterval(mTick); clearTimeout(mParar);
+  try{ mPlayer?.pauseVideo(); }catch{}
+}
+$('#m-cerrar').onclick=cerrarPreview;
+$('#modal').addEventListener('click',e=>{ if(e.target.id==='modal') cerrarPreview(); });
+document.querySelectorAll('[data-salto]').forEach(b=>b.onclick=()=>{
+  mPlayer.seekTo(Math.max(0,mPlayer.getCurrentTime()+ +b.dataset.salto),true);
+});
+$('#m-probar').onclick=()=>{
+  clearTimeout(mParar);
+  mPlayer.seekTo(mCancion.inicio,true); mPlayer.playVideo();
+  mParar=setTimeout(()=>mPlayer.pauseVideo(), quiz.ajustes.duracion*1000);
+};
+$('#m-usar').onclick=()=>{
+  mCancion.inicio=Math.floor(mPlayer.getCurrentTime()); cambiado(); pintarLista(); cerrarPreview();
+  toast('El tros començarà a '+aReloj(mCancion.inicio));
+};
+
+/* ================================================================ JUEGO */
+const LETRAS=['A','B','C','D'];
+const TEXTO_PREGUNTA={artista:'Qui canta?',cancion:'Quina cançó és?',ambos:'Quina cançó sona?',estil:'De quin estil és?'};
+const etiqueta=(c,tipo)=> tipo==='artista'?c.artista : tipo==='cancion'?c.titulo : tipo==='estil'?(c.estil||'') : `${c.titulo} — ${c.artista}`;
+const CIRC=2*Math.PI*52;
+
+let partida=null, player=null, tick=null, desdeEditor=false, sala=null;
+
+function prepararPregunta(q, c){
+  const {pregunta:tipo, opciones:n}=q.ajustes;
+  const correcta=etiqueta(c,tipo);
+  const vistos=new Set([norm(correcta)]), pool=[];
+  // primer el que hi ha al quiz mateix; els estils de sèrie només si no n'hi ha prou
+  const propis=[...q.canciones.map(x=>etiqueta(x,tipo)), ...(tipo!=='ambos'?q.ajustes.extra||[]:[])];
+  const candidatos=[...mezclar(propis), ...(tipo==='estil'?mezclar(ESTILS):[])];
+  for(const e of candidatos){ if(e&&!vistos.has(norm(e))){ vistos.add(norm(e)); pool.push(e); } }
+  const opciones=mezclar([correcta,...pool.slice(0,n-1)]);
+  return {cancion:c, opciones, correcta:opciones.indexOf(correcta)};
+}
+
+/* ---------- modo de juego: se elige en la portada y se recuerda ---------- */
+let modoJuego='presentacion';
+try{ if(localStorage.getItem('alc-modo')==='movil') modoJuego='movil'; }catch{}
+function pintarModo(){
+  document.querySelectorAll('[data-elegir]').forEach(b=>{
+    const si=b.dataset.elegir===modoJuego;
+    b.classList.toggle('activo',si);
+    b.setAttribute(b.getAttribute('role')==='radio'?'aria-checked':'aria-pressed', si);
+  });
+  const txt = modoJuego==='movil' ? '▶ Jugar amb mòbils' : '▶ Jugar';
+  $('#ed-jugar').textContent=txt;
+  document.querySelectorAll('[data-jugar]').forEach(b=>b.textContent=txt);
+}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('[data-elegir]'); if(!b) return;
+  modoJuego=b.dataset.elegir;
+  try{ localStorage.setItem('alc-modo',modoJuego); }catch{}
+  pintarModo();
+});
+function jugar(q, deEditor=false){
+  if(modoJuego==='movil') abrirSala(q, deEditor);
+  else iniciarPartida(q, deEditor, 'presentacion');
+}
+
+/* ---------- sala (modo móviles) ---------- */
+async function abrirSala(q, deEditor){
+  let datos;
+  try{ datos=await api('/api/sala',{method:'POST',body:JSON.stringify({nombre:q.nombre||'Adivina la Canción'})}); }
+  catch(e){ toast('No s\'ha pogut obrir la sala: '+e.message,4000); return; }
+  cerrarSala();
+  sala={codigo:datos.codigo, token:datos.token, url:datos.url, estado:{jugadores:[],respondidos:0,ranking:[]}, q, deEditor};
+  const enlace=`${datos.url}?c=${datos.codigo}`;
+  sala.enllac=(datos.url_nom||datos.url)+`?c=${datos.codigo}`;
+  $('#s-url').textContent=(datos.url_nom||datos.url).replace(/^http:\/\//,'');
+  $('#s-codigo').textContent=datos.codigo;
+  const qr=$('#s-qr'); qr.innerHTML='';
+  if(window.QRCode){ new QRCode(qr,{text:enlace,width:220,height:220,correctLevel:QRCode.CorrectLevel.M}); qr.hidden=false; }
+  else qr.hidden=true;
+  if(/^http:\/\/127\./.test(datos.url)) toast('Aquest ordinador no sembla connectat a cap wifi',5000);
+  pintarSala();
+  sala.es=new EventSource(`/api/sala/${datos.codigo}/eventos?host=${datos.token}`);
+  sala.es.onmessage=e=>alEventoSala(JSON.parse(e.data));
+  mostrar('sala');
+}
+function pintarSala(){
+  const js=sala.estado.jugadores;
+  $('#s-n').textContent=js.length+' a dins';
+  $('#s-jugadores').innerHTML=js.length
+    ? js.map(j=>`<span class="chip">${esc(j.nombre)}</span>`).join('')
+    : '<span class="esperando">Esperant que entri algú…</span>';
+  $('#s-empezar').disabled=!js.length;
+}
+function alEventoSala(s){
+  if(!sala) return;
+  sala.estado=s;
+  if(!$('#vista-sala').hidden) pintarSala();
+  if(partida?.modo!=='movil') return;
+  pintarMarcador();
+  // si ya ha respondido todo el mundo, se revela sola
+  const f=partida.fase;
+  if((f==='sonando'||f==='tiempo') && s.abierta && s.ronda===partida.i+1 && s.jugadores.length && s.respondidos>=s.jugadores.length) resolver(null);
+}
+function host(accion, datos={}){
+  if(!sala) return Promise.resolve(null);
+  return api(`/api/sala/${sala.codigo}/host`,{method:'POST',body:JSON.stringify({token:sala.token,accion,...datos})}).catch(()=>null);
+}
+function cerrarSala(){
+  if(!sala) return;
+  host('cerrar'); sala.es?.close(); sala=null;
+}
+$('#s-copiar').onclick=async ()=>{
+  try{ await navigator.clipboard.writeText(sala.enllac); toast('Enllaç copiat: enganxa\'l al Moodle o al xat'); }
+  catch{ prompt('Copia aquest enllaç:', sala.enllac); }
+};
+$('#s-empezar').onclick=()=>iniciarPartida(sala.q, sala.deEditor, 'movil');
+$('#s-cancelar').onclick=()=>{ const d=sala?.deEditor; cerrarSala(); d?mostrar('editor'):cargarInicio(); };
+
+/* ---------- partida ---------- */
+async function iniciarPartida(q, deEditor, modo){
+  desdeEditor=deEditor;
+  if(!deEditor) quiz=q;
+  const ajustes={...AJUSTES_DEF,...q.ajustes};
+  ajustes.duracion=Math.min(MAX_TROZO, ajustes.duracion);
+  let canciones=q.canciones.filter(c=>c.video);
+  if(ajustes.aleatorio) canciones=mezclar(canciones);
+  partida={modo, quiz:{...q,ajustes}, preguntas:canciones.map(c=>prepararPregunta({...q,ajustes},c)), i:0, aciertos:0, respuestas:[],
+           limite:Math.max(ajustes.duracion, ajustes.tiempo)};
+  $('#j-total').textContent=partida.preguntas.length;
+  $('#j-pregunta').textContent=TEXTO_PREGUNTA[ajustes.pregunta];
+  $('#j-teclas').innerHTML = modo==='movil'
+    ? '<kbd>Espai</kbd> escoltar / revelar / seguir · <kbd>R</kbd> repetir · Codi de la sala: <b>'+sala.codigo+'</b>'
+    : '<kbd>Espai</kbd> escoltar / revelar · <kbd>1</kbd>–<kbd>4</kbd> triar · <kbd>R</kbd> repetir · <kbd>→</kbd> següent';
+  mostrar('juego');
+  await ytListo;
+  if(!player){
+    await new Promise(res=>{
+      player=new YT.Player('jugador',{playerVars:{controls:0,disablekb:1,rel:0,playsinline:1,modestbranding:1,iv_load_policy:3,fs:0,hl:'ca',origin:location.origin},
+        events:{onReady:res, onStateChange:alCambiarEstado, onError:alError}});
+    });
+  }
+  prepararRonda();
+}
+
+function pintarMarcador(){
+  if(partida.modo==='movil'){
+    const s=sala?.estado||{jugadores:[],respondidos:0};
+    $('#j-marcador-txt').textContent='Respostes';
+    $('#j-aciertos').textContent=`${partida.fase==='listo'||partida.fase==='cargando'?0:s.respondidos}/${s.jugadores.length}`;
+  }else{
+    $('#j-marcador-txt').textContent='Encerts';
+    $('#j-aciertos').textContent=partida.aciertos;
+  }
+}
+
+function prepararRonda(){
+  const p=partida.preguntas[partida.i];
+  clearTimeout(partida.corte); clearInterval(partida.fundido);
+  // primero se tapa (al instante) y después se toca el vídeo
+  partida.fase='listo'; partida.elegida=null; partida.base=p.cancion.inicio;
+  pintarFase();
+  try{ player.stopVideo(); }catch{}
+  $('#j-ranking').hidden=true;
+  $('#j-ronda').textContent=partida.i+1;
+  $('#j-solucion').innerHTML='';
+  $('#j-opciones').innerHTML=p.opciones.map((o,k)=>`<button class="opcion" data-k="${k}" disabled><span class="letra">${LETRAS[k]}</span><span>${esc(o)}</span></button>`).join('');
+  pintarCuenta(partida.modo==='movil'?partida.limite:partida.quiz.ajustes.duracion, partida.modo==='movil'?partida.limite:partida.quiz.ajustes.duracion);
+  pintarMarcador();
+  if(partida.modo==='movil') host('pregunta',{ronda:partida.i+1,total:partida.preguntas.length,pregunta:$('#j-pregunta').textContent,opciones:p.opciones});
+  if(partida.i>0) escuchar();  // tras «Siguiente» ya hubo un clic: puede sonar sola
+}
+
+function escuchar(){
+  const p=partida.preguntas[partida.i];
+  partida.fase='cargando'; partida.base=p.cancion.inicio; pintarFase();
+  player.setVolume(100); player.unMute();
+  player.loadVideoById({videoId:p.cancion.video.id, startSeconds:p.cancion.inicio});
+  clearTimeout(partida.espera);
+  partida.espera=setTimeout(()=>{ if(partida?.fase==='cargando'){ $('#j-msg-texto').textContent='Si no sona, prem ▶ Escoltar un altre cop'; } },7000);
+}
+
+function alCambiarEstado(e){
+  if(!partida) return;
+  if(e.data===YT.PlayerState.PLAYING && partida.fase==='cargando'){
+    partida.fase='sonando';
+    partida.base=player.getCurrentTime();
+    partida.t0=performance.now();
+    if(partida.modo==='movil') host('abrir',{limiteMs:partida.limite*1000});
+    pintarFase(); arrancarTick();
+  }
+}
+function alError(e){
+  if(!partida || partida.fase==='fin') return;
+  clearInterval(tick);
+  const msg='Aquest vídeo no es pot reproduir ('+(ERRORES_YT[e.data]||e.data)+'). Canvia\'l a l\'editor.';
+  if(partida.modo==='movil' && partida.fase==='cargando'){
+    // sin música no hay pregunta: se abre igualmente para no bloquear la partida
+    partida.fase='tiempo'; partida.t0=performance.now();
+    host('abrir',{limiteMs:partida.limite*1000}); arrancarTick();
+  }else partida.fase='tiempo';
+  pintarFase();
+  $('#j-msg-texto').textContent=msg;
+}
+
+function arrancarTick(){
+  clearInterval(tick);
+  tick=setInterval(()=>{
+    if(!partida) return clearInterval(tick);
+    const dur=partida.quiz.ajustes.duracion;
+    if(partida.fase==='sonando'){
+      const quedanMusica=dur-(player.getCurrentTime()-partida.base);
+      if(partida.modo==='presentacion') pintarCuenta(quedanMusica, dur);
+      if(quedanMusica<=0) finTrozo();
+    }
+    if(partida.modo==='movil' && (partida.fase==='sonando'||partida.fase==='tiempo')){
+      const quedan=partida.limite-(performance.now()-partida.t0)/1000;
+      pintarCuenta(quedan, partida.limite);
+      if(quedan<=0) resolver(null);
+    }
+    if(partida.fase!=='sonando' && !(partida.modo==='movil' && partida.fase==='tiempo')) clearInterval(tick);
+  },100);
+}
+function fundir(){
+  clearInterval(partida.fundido);
+  let vol=100;
+  partida.fundido=setInterval(()=>{ vol-=20; if(vol<=0){ clearInterval(partida.fundido); player.pauseVideo(); player.setVolume(100); } else player.setVolume(vol); },70);
+}
+function finTrozo(){ partida.fase='tiempo'; pintarFase(); fundir(); }
+function pintarCuenta(quedan, total){
+  const q=Math.max(0,Math.min(total,quedan));
+  $('#j-numero').textContent=Math.ceil(q);
+  const arco=$('#j-arco');
+  arco.style.strokeDasharray=CIRC; arco.style.strokeDashoffset=CIRC*(1-q/total);
+  arco.classList.toggle('poco', q<=Math.min(3,total/2));
+}
+
+function pintarFase(){
+  const f=partida.fase, movil=partida.modo==='movil';
+  $('#j-tapa').classList.toggle('fuera', f==='resuelto');
+  $('#j-vinilo').classList.toggle('gira', f==='sonando');
+  $('#j-ondas').classList.toggle('quieto', f!=='sonando');
+  $('#j-msg-texto').textContent = {
+    listo: movil?'Prem ▶ Escoltar quan estigueu a punt':'Prem ▶ Escoltar quan la classe estigui a punt',
+    cargando:'Carregant…',
+    sonando: movil?'Escolteu i responeu al mòbil!':'Escolta!',
+    tiempo: movil?'Últims segons per respondre!':'Temps! Quina opció tria la classe?',
+    resuelto:'', ranking:''}[f] ?? '';
+  document.querySelectorAll('.opcion').forEach(b=>b.disabled = movil || !(f==='sonando'||f==='tiempo'));
+  const btn=$('#j-principal');
+  const ultima=partida.i===partida.preguntas.length-1;
+  btn.textContent = f==='listo'||f==='cargando' ? '▶ Escuchar'
+    : f==='sonando'||f==='tiempo' ? '👁 Revelar'
+    : f==='resuelto' && movil ? '🏆 Classificació'
+    : ultima ? '🏁 Veure el resultat' : 'Següent →';
+  $('#j-repetir').disabled = !(f==='sonando'||f==='tiempo'||f==='resuelto');
+  const enRanking=f==='ranking';
+  $('#j-ranking').hidden=!enRanking;
+  ['#j-pregunta','.escenario','#j-solucion','#j-opciones'].forEach(sel=>$(sel).hidden=enRanking);
+  $('#j-repetir').hidden=enRanking;
+}
+
+async function resolver(k){
+  if(!partida || !(partida.fase==='sonando'||partida.fase==='tiempo')) return;
+  if(partida.modo==='movil' && k!=null) return;
+  clearInterval(tick); clearInterval(partida.fundido);
+  const p=partida.preguntas[partida.i];
+  partida.fase='resuelto'; partida.elegida=k;
+  const bien = k===p.correcta;
+  if(bien) partida.aciertos++;
+  partida.respuestas[partida.i]= k==null ? null : bien;
+  document.querySelectorAll('.opcion').forEach((b,j)=>{
+    b.classList.toggle('bien', j===p.correcta);
+    b.classList.toggle('mal', j!==p.correcta);
+    b.classList.toggle('elegida', j===k);
+    if(j===k && !bien) b.querySelector('.letra').textContent='✕';
+  });
+  const c=p.cancion;
+  const cap = partida.quiz.ajustes.pregunta==='estil'
+    ? `${esc(p.opciones[p.correcta])}<small>${esc(c.artista)} — ${esc(c.titulo)}</small>`
+    : `${esc(c.titulo)}<small>${esc(c.artista)}</small>`;
+  $('#j-solucion').innerHTML = (k==null?'':bien?'✅ Correcte! ':'❌ Era… ') + cap;
+  pintarFase(); pintarMarcador();
+  // el vídeo sigue sonando como mucho MAX_REVELADO segundos
+  player.setVolume(100); player.playVideo();
+  clearTimeout(partida.corte);
+  partida.corte=setTimeout(()=>{ if(partida?.fase==='resuelto') fundir(); }, MAX_REVELADO*1000);
+  if(partida.modo==='movil'){
+    const s=await host('resolver',{correcta:p.correcta});
+    if(s){
+      sala.estado=s;
+      document.querySelectorAll('.opcion').forEach((b,j)=>b.insertAdjacentHTML('beforeend',`<span class="votos">${s.conteo?.[j]??0}</span>`));
+    }
+  }
+}
+
+function pintarRanking(){
+  const r=sala?.estado?.ranking||[];
+  const ultima=partida.i===partida.preguntas.length-1;
+  $('#j-ranking').innerHTML=`<h2>${ultima?'Classificació final':'Classificació'}</h2>`+
+    (r.length? r.slice(0,5).map((j,i)=>`<div class="fila-rank"><span class="pos">${i+1}</span><span class="nom">${esc(j.nombre)}</span>
+      <span class="pts">${j.puntos.toLocaleString('es-ES')}${j.ganados?`<small>+${j.ganados}</small>`:''}</span></div>`).join('')
+      : '<p class="esperando" style="text-align:center">Ningú no ha jugat aquesta ronda.</p>');
+}
+
+function siguiente(){
+  if(partida.modo==='movil' && partida.fase==='resuelto'){
+    clearTimeout(partida.corte); fundir();
+    partida.fase='ranking'; host('ranking'); pintarRanking(); pintarFase();
+    return;
+  }
+  if(partida.i < partida.preguntas.length-1){ partida.i++; prepararRonda(); }
+  else terminar();
+}
+function repetir(){
+  if(!partida || !(partida.fase==='sonando'||partida.fase==='tiempo'||partida.fase==='resuelto')) return;
+  const c=partida.preguntas[partida.i].cancion;
+  clearInterval(partida.fundido); clearTimeout(partida.corte);
+  player.setVolume(100); player.seekTo(c.inicio,true); player.playVideo();
+  if(partida.fase==='resuelto'){
+    partida.corte=setTimeout(()=>{ if(partida?.fase==='resuelto') fundir(); }, MAX_REVELADO*1000);
+  }else{
+    partida.fase='sonando'; partida.base=c.inicio; pintarFase(); arrancarTick();
+  }
+}
+function accionPrincipal(){
+  const f=partida?.fase;
+  if(f==='listo'||f==='cargando') escuchar();
+  else if(f==='sonando'||f==='tiempo') resolver(null);
+  else if(f==='resuelto'||f==='ranking') siguiente();
+}
+
+$('#j-opciones').addEventListener('click',e=>{ const b=e.target.closest('.opcion'); if(b) resolver(+b.dataset.k); });
+$('#j-principal').onclick=accionPrincipal;
+$('#j-repetir').onclick=repetir;
+$('#j-salir').onclick=async ()=>{
+  if(partida && partida.fase!=='fin' && !(await confirmar('Vols sortir de la partida?','Tornar al menú'))) return;
+  pararJuego(); cerrarSala(); desdeEditor?mostrar('editor'):cargarInicio();
+};
+$('#pantalla-completa').onclick=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen?.();
+document.addEventListener('keydown',e=>{
+  if($('#vista-juego').hidden || !partida || e.target.matches('input,textarea,select')) return;
+  if(!$('#modal-si-no').hidden || !$('#modal').hidden) return;
+  if(e.key===' '||e.key==='Enter'){ e.preventDefault(); accionPrincipal(); }
+  else if(e.key==='ArrowRight' && (partida.fase==='resuelto'||partida.fase==='ranking')) siguiente();
+  else if(e.key==='r'||e.key==='R') repetir();
+  else if(partida.modo==='presentacion'){
+    const n=partida.preguntas[partida.i].opciones.length;
+    let k=/^[1-4]$/.test(e.key)?+e.key-1 : /^[a-dA-D]$/.test(e.key)?'abcd'.indexOf(e.key.toLowerCase()) : -1;
+    if(k>=0 && k<n) resolver(k);
+  }
+});
+
+function pararJuego(){
+  clearInterval(tick);
+  if(partida){ clearTimeout(partida.espera); clearTimeout(partida.corte); clearInterval(partida.fundido); }
+  try{ player?.stopVideo(); }catch{}
+  partida=partida?{...partida,fase:'fin'}:null;
+}
+
+function terminar(){
+  const {aciertos, preguntas, respuestas, modo}=partida;
+  pararJuego();
+  const total=preguntas.length, pct=aciertos/total;
+  const podio=$('#f-podio');
+  if(modo==='movil'){
+    host('fin');
+    const r=sala?.estado?.ranking||[];
+    const orden=[[r[1],'p2',2],[r[0],'p1',1],[r[2],'p3',3]].filter(x=>x[0]);
+    podio.innerHTML=orden.map(([j,cl,n])=>`<div class="${cl}"><span class="nom">${esc(j.nombre)}</span><span class="pts">${j.puntos.toLocaleString('ca-ES')} pts</span><span class="caja">${n}</span></div>`).join('');
+    podio.hidden=!orden.length;
+    $('#f-nota').hidden=true;
+    $('#f-frase').textContent=r.length?`Enhorabona, ${r[0].nombre}!`:'Ningú no ha jugat aquesta partida.';
+  }else{
+    podio.hidden=true; $('#f-nota').hidden=false;
+    $('#f-nota').innerHTML=`${aciertos}<small> / ${total}</small>`;
+    $('#f-frase').textContent = pct===1?'Ple! Sou una enciclopèdia musical.' : pct>=.75?'Molt bona orella!' : pct>=.5?'Gens malament! Aprovat amb ritme.' : 'A escoltar més ràdio! Una altra ronda i ho peteu.';
+  }
+  $('#f-resumen').innerHTML=preguntas.map((p,i)=>`<div class="item">
+    <b style="text-align:center">${i+1}</b><img src="${miniatura(p.cancion.video.id)}" alt="">
+    <div><b>${esc(p.cancion.titulo)}</b><br><span>${esc(p.cancion.artista)}</span></div>
+    <span style="font-size:20px">${modo==='movil'?'':respuestas[i]===true?'✅':respuestas[i]===false?'❌':'–'}</span></div>`).join('');
+  mostrar('final');
+}
+$('#f-otra').onclick=()=>{ cerrarSala(); jugar(partida.quiz, desdeEditor); };
+$('#f-editar').onclick=()=>{ cerrarSala(); if(desdeEditor) mostrar('editor'); else abrirEditor(partida.quiz); };
+$('#f-inicio').onclick=()=>{ cerrarSala(); salirA(cargarInicio); };
+window.addEventListener('pagehide',()=>{ if(sala) navigator.sendBeacon?.(`/api/sala/${sala.codigo}/host`, new Blob([JSON.stringify({token:sala.token,accion:'cerrar'})],{type:'application/json'})); });
+
+/* ================================================================ arranque */
+pintarModo();
+if(location.protocol==='file:'){ $('#aviso-servidor').hidden=false; mostrar('inicio'); }
+else cargarInicio();
+</script>
+</body>
+</html>

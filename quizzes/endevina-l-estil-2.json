@@ -1,0 +1,833 @@
+{
+  "id": "endevina-l-estil-2",
+  "nombre": "Endevina l'estil 2",
+  "ajustes": {
+    "pregunta": "estil",
+    "duracion": 10,
+    "tiempo": 15,
+    "opciones": 4,
+    "inicio": 30,
+    "aleatorio": true,
+    "extra": []
+  },
+  "canciones": [
+    {
+      "artista": "Nirvana",
+      "titulo": "Smells Like Teen Spirit",
+      "estil": "Rock",
+      "inicio": 30,
+      "video": {
+        "id": "hTWKbfoikeg",
+        "titulo": "Nirvana - Smells Like Teen Spirit (Official Music Video)",
+        "canal": "Nirvana",
+        "duracion": "4:39"
+      },
+      "resultados": [
+        {
+          "id": "hTWKbfoikeg",
+          "titulo": "Nirvana - Smells Like Teen Spirit (Official Music Video)",
+          "canal": "Nirvana",
+          "duracion": "4:39"
+        },
+        {
+          "id": "69Wqhhun5_o",
+          "titulo": "Nirvana - Smells Like Teen Spirit (Lyrics)",
+          "canal": "7clouds Rock",
+          "duracion": "5:00"
+        },
+        {
+          "id": "R3XIGon2RjY",
+          "titulo": "Nirvana - Smells Like Teen Spirit (Live at Reading 1992)",
+          "canal": "Nirvana",
+          "duracion": "5:31"
+        },
+        {
+          "id": "kCITskxz6CY",
+          "titulo": "Nirvana - Smells Like Teen Spirit (Loop and Extended)",
+          "canal": "LoopMusic",
+          "duracion": "17:01"
+        },
+        {
+          "id": "cKDn1EQzg5Y",
+          "titulo": "Nirvana - Smells Like Teen Spirit (full version) RE-MASTERING",
+          "canal": "eduardnovikov",
+          "duracion": "5:13"
+        }
+      ]
+    },
+    {
+      "artista": "Carolina Durante",
+      "titulo": "Cayetano",
+      "estil": "Rock",
+      "inicio": 30,
+      "video": {
+        "id": "ZiUhV12G024",
+        "titulo": "Cayetano",
+        "canal": "Carolina Durante",
+        "duracion": ""
+      },
+      "resultados": []
+    },
+    {
+      "artista": "Joan Jett",
+      "titulo": "I Love Rock 'n' Roll",
+      "estil": "Rock",
+      "inicio": 30,
+      "video": {
+        "id": "wMsazR6Tnf8",
+        "titulo": "I Love Rock 'N Roll - Joan Jett & the Blackhearts (Official Music Video) [Remastered HD]",
+        "canal": "Joan Jett and the Blackhearts",
+        "duracion": "3:41"
+      },
+      "resultados": [
+        {
+          "id": "wMsazR6Tnf8",
+          "titulo": "I Love Rock 'N Roll - Joan Jett & the Blackhearts (Official Music Video) [Remastered HD]",
+          "canal": "Joan Jett and the Blackhearts",
+          "duracion": "3:41"
+        },
+        {
+          "id": "iC8oP4Z_xPw",
+          "titulo": "Joan Jett - I Love Rock 'n' Roll",
+          "canal": "15mOBSCENE15",
+          "duracion": "2:56"
+        },
+        {
+          "id": "oazm-5XNO-E",
+          "titulo": "Joan Jett - I Love Rock And Roll (Live @ Hellfest Open Air Festival | 22/06/2018)",
+          "canal": "earthquake1755",
+          "duracion": "2:53"
+        },
+        {
+          "id": "oKuBHSWdV8I",
+          "titulo": "Joan Jett & the Blackhearts - I Love Rock 'N Roll",
+          "canal": "RockHype",
+          "duracion": "2:59"
+        },
+        {
+          "id": "ikfJCVLXVVQ",
+          "titulo": "Joan Jett & The Blackhearts - I Love Rock N Roll (Official Video), Full HD (Remastered and Upscaled)",
+          "canal": "Enhanced Music Videos",
+          "duracion": "3:38"
+        }
+      ]
+    },
+    {
+      "artista": "Dua Lipa",
+      "titulo": "Levitating",
+      "estil": "Pop",
+      "inicio": 30,
+      "video": {
+        "id": "TUVcZfQe-Kw",
+        "titulo": "Dua Lipa - Levitating Featuring DaBaby (Official Music Video)",
+        "canal": "Dua Lipa",
+        "duracion": "3:51"
+      },
+      "resultados": [
+        {
+          "id": "TUVcZfQe-Kw",
+          "titulo": "Dua Lipa - Levitating Featuring DaBaby (Official Music Video)",
+          "canal": "Dua Lipa",
+          "duracion": "3:51"
+        },
+        {
+          "id": "ovG2QwiObhk",
+          "titulo": "Dua Lipa - Levitating (Lyrics)",
+          "canal": "MusiCat",
+          "duracion": "3:23"
+        },
+        {
+          "id": "WHuBW3qKm9g",
+          "titulo": "Dua Lipa - Levitating (Official Lyrics Video)",
+          "canal": "Dua Lipa",
+          "duracion": "3:41"
+        },
+        {
+          "id": "F4neLJQC1_E",
+          "titulo": "Dua Lipa: Tiny Desk (Home) Concert",
+          "canal": "NPR Music",
+          "duracion": "15:58"
+        },
+        {
+          "id": "6y9sLeB3fsk",
+          "titulo": "Dua Lipa - Levitating (Live from the Royal Albert Hall) (Dj Smooth Remix)",
+          "canal": "Dj Smooth",
+          "duracion": "5:06"
+        }
+      ]
+    },
+    {
+      "artista": "Miki Núñez",
+      "titulo": "Escriurem",
+      "estil": "Pop",
+      "inicio": 30,
+      "video": {
+        "id": "PoGFiOjfQvY",
+        "titulo": "Miki Núñez - Escriurem (Lyric Video)",
+        "canal": "Miki Nuñez",
+        "duracion": "3:48"
+      },
+      "resultados": [
+        {
+          "id": "PoGFiOjfQvY",
+          "titulo": "Miki Núñez - Escriurem (Lyric Video)",
+          "canal": "Miki Nuñez",
+          "duracion": "3:48"
+        },
+        {
+          "id": "_Qzt_CMaCcU",
+          "titulo": "Escriurem | Miki Núñez | Letra",
+          "canal": "The lyrics box",
+          "duracion": "3:58"
+        },
+        {
+          "id": "zo39iWFcr20",
+          "titulo": "Escriurem #Joemcorono - Col·lectiva",
+          "canal": "Miki Nuñez",
+          "duracion": "4:10"
+        },
+        {
+          "id": "IhKtW-PlWeo",
+          "titulo": "Escriureum (Miki feat Izaro)",
+          "canal": "Gabi de la Maza",
+          "duracion": "3:53"
+        },
+        {
+          "id": "BiE5Uhaoqz8",
+          "titulo": "Escriurem",
+          "canal": "Miki Nuñez",
+          "duracion": "3:51"
+        }
+      ]
+    },
+    {
+      "artista": "Ginestà",
+      "titulo": "Tot el que ens queda",
+      "estil": "Pop",
+      "inicio": 30,
+      "video": {
+        "id": "PHZOxr-b2mE",
+        "titulo": "GINESTÀ - TOT EL QUE ENS QUEDA",
+        "canal": "Ginestà Oficial",
+        "duracion": "2:35"
+      },
+      "resultados": [
+        {
+          "id": "PHZOxr-b2mE",
+          "titulo": "GINESTÀ - TOT EL QUE ENS QUEDA",
+          "canal": "Ginestà Oficial",
+          "duracion": "2:35"
+        },
+        {
+          "id": "wI2U-MY3wrI",
+          "titulo": "GINESTÀ - Les coses senzilles",
+          "canal": "Ginestà Oficial",
+          "duracion": "2:39"
+        },
+        {
+          "id": "qp6cDEDc4P4",
+          "titulo": "GINESTÀ - La meva sort (videolyric)",
+          "canal": "Ginestà Oficial",
+          "duracion": "2:40"
+        },
+        {
+          "id": "ahZXT252Xug",
+          "titulo": "🏆 Ginestà - Tot el que ens queda als Premis RAC105 2025",
+          "canal": "RAC105",
+          "duracion": "2:49"
+        },
+        {
+          "id": "NVGMUZSS_1M",
+          "titulo": "GINESTÀ amb ALBA ARMENGOU - T'estimo tant (Videoclip oficial)",
+          "canal": "Ginestà Oficial",
+          "duracion": "3:01"
+        }
+      ]
+    },
+    {
+      "artista": "Bad Bunny",
+      "titulo": "Tití Me Preguntó",
+      "estil": "Reggaeton",
+      "inicio": 30,
+      "video": {
+        "id": "Cr8K88UcO0s",
+        "titulo": "Bad Bunny - Tití Me Preguntó (Video Oficial) | Un Verano Sin Ti",
+        "canal": "Bad Bunny",
+        "duracion": "4:51"
+      },
+      "resultados": [
+        {
+          "id": "Cr8K88UcO0s",
+          "titulo": "Bad Bunny - Tití Me Preguntó (Video Oficial) | Un Verano Sin Ti",
+          "canal": "Bad Bunny",
+          "duracion": "4:51"
+        },
+        {
+          "id": "qBUKfQRbzuk",
+          "titulo": "Bad Bunny - Tití Me Preguntó (La Letra / Lyrics)",
+          "canal": "BagOnly",
+          "duracion": "4:04"
+        },
+        {
+          "id": "1ZJCDGUGc1o",
+          "titulo": "Titi Me Pregunto - Bad Bunny (Audio/Estudio) 2022",
+          "canal": "JRMUSIC",
+          "duracion": "4:04"
+        },
+        {
+          "id": "XxQgfs2eRKY",
+          "titulo": "BAD BUNNY-TITI ME PREGUNTO HQ",
+          "canal": "omar villalobos sanchez",
+          "duracion": "4:31"
+        },
+        {
+          "id": "QpKkNIT84GY",
+          "titulo": "Bad Bunny - Tití Me Preguntó (360° Visualizer) | Un Verano Sin Ti",
+          "canal": "Bad Bunny",
+          "duracion": "4:04"
+        }
+      ]
+    },
+    {
+      "artista": "Rosalía i J Balvin",
+      "titulo": "Con Altura",
+      "estil": "Reggaeton",
+      "inicio": 30,
+      "video": {
+        "id": "p7bfOZek9t4",
+        "titulo": "ROSALÍA, J Balvin - Con Altura (Official Video) ft. El Guincho",
+        "canal": "ROSALÍA",
+        "duracion": "2:45"
+      },
+      "resultados": [
+        {
+          "id": "p7bfOZek9t4",
+          "titulo": "ROSALÍA, J Balvin - Con Altura (Official Video) ft. El Guincho",
+          "canal": "ROSALÍA",
+          "duracion": "2:45"
+        },
+        {
+          "id": "FELWPcA2q5s",
+          "titulo": "ROSALÍA, J Balvin - Con Altura (Letra/Lyrics) ft.  El Guincho",
+          "canal": "Reggaeton Mundial",
+          "duracion": "2:40"
+        },
+        {
+          "id": "2nMi72fSUdE",
+          "titulo": "ROSALÍA, J Balvin - Con Altura (PARODIA/Parody) ft. El Guincho | \"COBERTURA\" | Jonatan Clay",
+          "canal": "Jonatan Clay",
+          "duracion": "3:31"
+        },
+        {
+          "id": "_2FYroZW4fo",
+          "titulo": "ROSALÍA, J Balvin - Con Altura (EN VIVO)  CONCIERTO",
+          "canal": "JeisonUrbanoVEVO",
+          "duracion": "0:53"
+        },
+        {
+          "id": "st85WPu0PVU",
+          "titulo": "ROSALÍA - Con Altura (Live on Austin City Limits)",
+          "canal": "ROSALÍA",
+          "duracion": "2:56"
+        }
+      ]
+    },
+    {
+      "artista": "Luis Fonsi",
+      "titulo": "Despacito",
+      "estil": "Reggaeton",
+      "inicio": 30,
+      "video": {
+        "id": "kJQP7kiw5Fk",
+        "titulo": "Luis Fonsi - Despacito ft. Daddy Yankee",
+        "canal": "Luis Fonsi",
+        "duracion": "4:42"
+      },
+      "resultados": [
+        {
+          "id": "kJQP7kiw5Fk",
+          "titulo": "Luis Fonsi - Despacito ft. Daddy Yankee",
+          "canal": "Luis Fonsi",
+          "duracion": "4:42"
+        },
+        {
+          "id": "tQDV9WzHcds",
+          "titulo": "Luis Fonsi - Despacito (Letra / Lyrics) ft. Daddy Yankee",
+          "canal": "Musica Milagrosa",
+          "duracion": "4:01"
+        },
+        {
+          "id": "cSB-8-7GWGE",
+          "titulo": "Luis Fonsi - Despacito ft. Daddy Yankee",
+          "canal": "Music World  02",
+          "duracion": "3:50"
+        },
+        {
+          "id": "Ih9Xg3aNjr0",
+          "titulo": "Luis Fonsi Latin Summer 2021",
+          "canal": "Music YouTube",
+          "duracion": "1:04:01"
+        },
+        {
+          "id": "1Tx_pPB2mU8",
+          "titulo": "Luis Fonsi - Despacito (Letra/Lyrics) ft. Daddy Yankee",
+          "canal": "Odilon Huamani",
+          "duracion": "4:13"
+        }
+      ]
+    },
+    {
+      "artista": "Avicii",
+      "titulo": "Wake Me Up",
+      "estil": "Electrònica",
+      "inicio": 30,
+      "video": {
+        "id": "IcrbM1l_BoI",
+        "titulo": "Avicii - Wake Me Up (Official Video)",
+        "canal": "Avicii",
+        "duracion": "4:33"
+      },
+      "resultados": [
+        {
+          "id": "IcrbM1l_BoI",
+          "titulo": "Avicii - Wake Me Up (Official Video)",
+          "canal": "Avicii",
+          "duracion": "4:33"
+        },
+        {
+          "id": "5y_KJAg8bHI",
+          "titulo": "Avicii - Wake Me Up (Official Lyric Video)",
+          "canal": "Avicii",
+          "duracion": "4:12"
+        },
+        {
+          "id": "SsYXnH9lzCY",
+          "titulo": "Avicii - Wake Me Up (Lyrics)",
+          "canal": "7clouds",
+          "duracion": "4:35"
+        },
+        {
+          "id": "Orp4k_YkE5w",
+          "titulo": "Avicii Tribute Concert - Wake Me Up (Live Vocals by Aloe Blacc)",
+          "canal": "Avicii",
+          "duracion": "4:08"
+        },
+        {
+          "id": "BNIAyzmdf_g",
+          "titulo": "Avicii Greatest Hits Full Album 2024 - Avicii Best Songs Playlist 2024 (Full Collection)",
+          "canal": "Vibe Vault",
+          "duracion": "1:12:58"
+        }
+      ]
+    },
+    {
+      "artista": "Alice Deejay",
+      "titulo": "Better Off Alone",
+      "estil": "Electrònica",
+      "inicio": 30,
+      "video": {
+        "id": "Lgs9QUtWc3M",
+        "titulo": "Alice Deejay - Better Off Alone (Official Video)",
+        "canal": "Alice Deejay",
+        "duracion": "2:56"
+      },
+      "resultados": [
+        {
+          "id": "Lgs9QUtWc3M",
+          "titulo": "Alice Deejay - Better Off Alone (Official Video)",
+          "canal": "Alice Deejay",
+          "duracion": "2:56"
+        },
+        {
+          "id": "Ck0LO6b6OQc",
+          "titulo": "Better Off Alone",
+          "canal": "Alice Deejay",
+          "duracion": "3:39"
+        },
+        {
+          "id": "b-B2W1PuuWY",
+          "titulo": "Alice Deejay - Better Off Alone ( Extended version )",
+          "canal": "Rex",
+          "duracion": "6:11"
+        },
+        {
+          "id": "5nEWN4VX1MM",
+          "titulo": "Better Off Alone",
+          "canal": "Alice Deejay",
+          "duracion": "3:35"
+        },
+        {
+          "id": "lHjNmyzrVvM",
+          "titulo": "Alice Deejay - Better Off Alone (UK Edit) Official Video",
+          "canal": "Alice Deejay",
+          "duracion": "3:47"
+        }
+      ]
+    },
+    {
+      "artista": "Siderland",
+      "titulo": "Tutu Turú",
+      "estil": "Electrònica",
+      "inicio": 30,
+      "video": {
+        "id": "5iaSXZGsfj8",
+        "titulo": "Siderland - Tutu Turú (Videoclip Oficial)",
+        "canal": "Siderland",
+        "duracion": "3:41"
+      },
+      "resultados": [
+        {
+          "id": "5iaSXZGsfj8",
+          "titulo": "Siderland - Tutu Turú (Videoclip Oficial)",
+          "canal": "Siderland",
+          "duracion": "3:41"
+        },
+        {
+          "id": "vB4_wF9oykM",
+          "titulo": "Tutu Turú (con Paula Koops)",
+          "canal": "Siderland",
+          "duracion": "3:02"
+        },
+        {
+          "id": "p8LoZOzkLRo",
+          "titulo": "Siderland: \"Tutu turú\" | Eufòria",
+          "canal": "3Cat y SX3",
+          "duracion": "3:00"
+        },
+        {
+          "id": "b-GxifUH_N8",
+          "titulo": "Siderland - Tutu Turú",
+          "canal": "U98 MUSIC",
+          "duracion": "3:04"
+        },
+        {
+          "id": "Z_jHK1ktv7c",
+          "titulo": "Tutu turú - Siderland (Vídeo Oficial Subtitulos en Español)",
+          "canal": "SebastianYT Musics ",
+          "duracion": "3:41"
+        }
+      ]
+    },
+    {
+      "artista": "Baya Baye",
+      "titulo": "Macarrisme Català",
+      "estil": "Hip-hop",
+      "inicio": 30,
+      "video": {
+        "id": "HnQUztdHRMs",
+        "titulo": "Macarrisme Català",
+        "canal": "Baya Baye",
+        "duracion": ""
+      },
+      "resultados": []
+    },
+    {
+      "artista": "Lauryn Hill",
+      "titulo": "Doo Wop (That Thing)",
+      "estil": "Hip-hop",
+      "inicio": 30,
+      "video": {
+        "id": "T6QKqFPRZSA",
+        "titulo": "Lauryn Hill - Doo Wop (That Thing) (Official HD Video)",
+        "canal": "Ms. Lauryn Hill",
+        "duracion": "3:59"
+      },
+      "resultados": [
+        {
+          "id": "T6QKqFPRZSA",
+          "titulo": "Lauryn Hill - Doo Wop (That Thing) (Official HD Video)",
+          "canal": "Ms. Lauryn Hill",
+          "duracion": "3:59"
+        },
+        {
+          "id": "zTvjPfY2sUs",
+          "titulo": "Lauryn Hill-Doo Wop (That Thing) (Explicit Lyrics)",
+          "canal": "mnewby82",
+          "duracion": "3:58"
+        },
+        {
+          "id": "wIbpc6QFXso",
+          "titulo": "Doo Wop (That Thing) (Edit)",
+          "canal": "Ms. Lauryn Hill",
+          "duracion": "4:01"
+        },
+        {
+          "id": "Zn_RP3iY_rY",
+          "titulo": "Lauryn Hill - Doo Wop (That Thing) (Lyrics)",
+          "canal": "Unique Sound",
+          "duracion": "4:01"
+        },
+        {
+          "id": "ubBrVNGaS2I",
+          "titulo": "Ms. Lauryn Hill - Doo Wop (That Thing) | Live From Austin City Limits TV",
+          "canal": "Austin City Limits",
+          "duracion": "6:50"
+        }
+      ]
+    },
+    {
+      "artista": "Stevie Wonder",
+      "titulo": "Superstition",
+      "estil": "Funk",
+      "inicio": 30,
+      "video": {
+        "id": "0CFuCYNx-1g",
+        "titulo": "Stevie Wonder Superstition",
+        "canal": "lozzagermain",
+        "duracion": "4:28"
+      },
+      "resultados": [
+        {
+          "id": "0CFuCYNx-1g",
+          "titulo": "Stevie Wonder Superstition",
+          "canal": "lozzagermain",
+          "duracion": "4:28"
+        },
+        {
+          "id": "97hwNY3ni10",
+          "titulo": "Stevie Wonder - Superstition (1974)",
+          "canal": "Musikladen",
+          "duracion": "3:14"
+        },
+        {
+          "id": "ftdZ363R9kQ",
+          "titulo": "Superstition",
+          "canal": "Stevie Wonder",
+          "duracion": "4:27"
+        },
+        {
+          "id": "_zz1RzTDzoE",
+          "titulo": "Stevie Wonder and Jeff Beck Perform \"Superstition\" | Rock and Roll Hall of Fame 25th Anniversary",
+          "canal": "Rock & Roll Hall of Fame",
+          "duracion": "4:21"
+        },
+        {
+          "id": "GySzVohtHLw",
+          "titulo": "Stevie Wonder - Superstition on Soul Train - Jan 13, 1973 (My \"Stereo Studio Sound\" Re-Edit)",
+          "canal": "ilviolino1",
+          "duracion": "4:10"
+        }
+      ]
+    },
+    {
+      "artista": "Chaka Khan",
+      "titulo": "Ain't Nobody",
+      "estil": "Funk",
+      "inicio": 30,
+      "video": {
+        "id": "BNirQXe8HOA",
+        "titulo": "Rufus and Chaka Khan - Ain't Nobody [HD Remaster] (Official Video)",
+        "canal": "Chaka Khan",
+        "duracion": "3:22"
+      },
+      "resultados": [
+        {
+          "id": "BNirQXe8HOA",
+          "titulo": "Rufus and Chaka Khan - Ain't Nobody [HD Remaster] (Official Video)",
+          "canal": "Chaka Khan",
+          "duracion": "3:22"
+        },
+        {
+          "id": "T_3FY2kEdOI",
+          "titulo": "Chaka Khan and Rufus - Ain't Nobody (lyrics)",
+          "canal": "Lyrixa",
+          "duracion": "4:41"
+        },
+        {
+          "id": "AYb3C5MVycM",
+          "titulo": "Chaka Khan - Ain't Nobody",
+          "canal": "Günter Bauer Spielbach",
+          "duracion": "4:56"
+        },
+        {
+          "id": "vupV5UewxDI",
+          "titulo": "Rufus & Chaka Khan ~ Aint Nobody (Extended Version)",
+          "canal": "RETROMIX COLLECTION",
+          "duracion": "8:40"
+        },
+        {
+          "id": "ZhU_jZeSy9w",
+          "titulo": "Rufus & Chaka Khan - Ain't Nobody",
+          "canal": "johnniewalker23",
+          "duracion": "4:43"
+        }
+      ]
+    },
+    {
+      "artista": "System of a Down",
+      "titulo": "Chop Suey!",
+      "estil": "Metal",
+      "inicio": 30,
+      "video": {
+        "id": "CSvFpBOe8eY",
+        "titulo": "System Of A Down - Chop Suey! (Official HD Video)",
+        "canal": "System Of A Down",
+        "duracion": "3:29"
+      },
+      "resultados": [
+        {
+          "id": "CSvFpBOe8eY",
+          "titulo": "System Of A Down - Chop Suey! (Official HD Video)",
+          "canal": "System Of A Down",
+          "duracion": "3:29"
+        },
+        {
+          "id": "27G-wokE3TQ",
+          "titulo": "System Of A Down - Chop Suey",
+          "canal": "blackheartedsoab",
+          "duracion": "3:31"
+        },
+        {
+          "id": "GK-DkHHAMIU",
+          "titulo": "System of a Down - Chop Suey (Remastered 2021)",
+          "canal": "Funnyferal",
+          "duracion": "3:31"
+        },
+        {
+          "id": "EsgmN9PKr_Y",
+          "titulo": "System Of A Down - Chop Suey! (Lyrics)",
+          "canal": "LyricFlow",
+          "duracion": "3:23"
+        },
+        {
+          "id": "iywaBOMvYLI",
+          "titulo": "System Of A Down - Toxicity (Official HD Video)",
+          "canal": "System Of A Down",
+          "duracion": "3:45"
+        }
+      ]
+    },
+    {
+      "artista": "Iron Maiden",
+      "titulo": "The Trooper",
+      "estil": "Metal",
+      "inicio": 30,
+      "video": {
+        "id": "X4bgXH3sJ2Q",
+        "titulo": "Iron Maiden - The Trooper (Official Video)",
+        "canal": "Iron Maiden",
+        "duracion": "4:24"
+      },
+      "resultados": [
+        {
+          "id": "X4bgXH3sJ2Q",
+          "titulo": "Iron Maiden - The Trooper (Official Video)",
+          "canal": "Iron Maiden",
+          "duracion": "4:24"
+        },
+        {
+          "id": "t24ij5kI2cg",
+          "titulo": "Iron Maiden - The Trooper. HQ audio.",
+          "canal": "NewRockGenerator N.R.G",
+          "duracion": "4:15"
+        },
+        {
+          "id": "LJHPoWKgOTI",
+          "titulo": "Iron Maiden-The Trooper (2015 Remaster)",
+          "canal": "Imperio Metal",
+          "duracion": "4:13"
+        },
+        {
+          "id": "CfDOP7WrDpw",
+          "titulo": "The Trooper (Live at Long Beach Arena) [1998 Remaster]",
+          "canal": "Iron Maiden",
+          "duracion": "4:32"
+        },
+        {
+          "id": "-QEb0iZ9uxc",
+          "titulo": "Iron Maiden - The Trooper (En Vivo!) [HD]",
+          "canal": "fadingbox",
+          "duracion": "4:03"
+        }
+      ]
+    },
+    {
+      "artista": "Gipsy Kings",
+      "titulo": "Bamboleo",
+      "estil": "Rumba",
+      "inicio": 30,
+      "video": {
+        "id": "7qbEt_lSib4",
+        "titulo": "Gipsy Kings - Bamboléo (Official Video)",
+        "canal": "Gipsy Kings",
+        "duracion": "3:58"
+      },
+      "resultados": [
+        {
+          "id": "7qbEt_lSib4",
+          "titulo": "Gipsy Kings - Bamboléo (Official Video)",
+          "canal": "Gipsy Kings",
+          "duracion": "3:58"
+        },
+        {
+          "id": "NhGAQ6fjJxo",
+          "titulo": "Gipsy Kings - Bamboléo (Audio)",
+          "canal": "Gipsy Kings",
+          "duracion": "3:25"
+        },
+        {
+          "id": "GGqcpDSUJlE",
+          "titulo": "Gipsy Kings - Bamboléo (Official Lyric Video)",
+          "canal": "Gipsy Kings",
+          "duracion": "3:24"
+        },
+        {
+          "id": "VxyStwkBQaI",
+          "titulo": "Gipsy Kings Greatest Hits 2021 - Gipsy Kings Éxitos De Colección 2021",
+          "canal": "Refugio Wallen",
+          "duracion": "1:42:47"
+        },
+        {
+          "id": "9lUpII6t00c",
+          "titulo": "Gipsy Kings - Bamboleo / Volare / Djobi Djoba / Pida Me La / Baila Me (Audio)",
+          "canal": "Gipsy Kings",
+          "duracion": "4:50"
+        }
+      ]
+    },
+    {
+      "artista": "La Pegatina",
+      "titulo": "El gat rumberu",
+      "estil": "Rumba",
+      "inicio": 30,
+      "video": {
+        "id": "XYKeFkKmSt4",
+        "titulo": "La Pegatina - Gat Rumberu (videoclip oficial)",
+        "canal": "La Pegatina",
+        "duracion": "3:31"
+      },
+      "resultados": [
+        {
+          "id": "XYKeFkKmSt4",
+          "titulo": "La Pegatina - Gat Rumberu (videoclip oficial)",
+          "canal": "La Pegatina",
+          "duracion": "3:31"
+        },
+        {
+          "id": "KIUdJc4fH24",
+          "titulo": "gat rumberu - la pegatina",
+          "canal": "larumbametumba",
+          "duracion": "2:36"
+        },
+        {
+          "id": "6g6aef1Qeak",
+          "titulo": "La Pegatina - \"El gat rumberu\": cançó cantada | Cançonarres",
+          "canal": "SX3",
+          "duracion": "2:40"
+        },
+        {
+          "id": "kki9t5zhg5Q",
+          "titulo": "13. La Gran Pegatina - Gat Rumberu (Live 2016)",
+          "canal": "La Pegatina",
+          "duracion": "2:34"
+        },
+        {
+          "id": "rkfl0R6JqxI",
+          "titulo": "La Pegatina - Gat Rumberu (Directo)",
+          "canal": "Arnyrock",
+          "duracion": "2:43"
+        }
+      ]
+    }
+  ]
+}

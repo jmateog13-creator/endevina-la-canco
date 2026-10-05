@@ -1,0 +1,659 @@
+{
+  "id": "ejemplo-exitos-2000",
+  "nombre": "Exemple · Èxits en castellà dels 2000",
+  "ajustes": {
+    "pregunta": "artista",
+    "duracion": 5,
+    "opciones": 4,
+    "inicio": 30,
+    "aleatorio": true,
+    "extra": []
+  },
+  "canciones": [
+    {
+      "artista": "Shakira",
+      "titulo": "La Tortura",
+      "inicio": 68,
+      "video": {
+        "id": "Dsp_8Lm1eSk",
+        "titulo": "Shakira - La Tortura (Official HD Video) ft. Alejandro Sanz",
+        "canal": "Shakira",
+        "duracion": "3:45"
+      },
+      "resultados": [
+        {
+          "id": "Dsp_8Lm1eSk",
+          "titulo": "Shakira - La Tortura (Official HD Video) ft. Alejandro Sanz",
+          "canal": "Shakira",
+          "duracion": "3:45"
+        },
+        {
+          "id": "8KO3CEMt-Lw",
+          "titulo": "Shakira - La Tortura (Live)",
+          "canal": "Shakira",
+          "duracion": "4:49"
+        },
+        {
+          "id": "dF6aI8gvg-k",
+          "titulo": "Shakira - La Tortura (Letra/Lyrics) feat. Alejandro Sanz",
+          "canal": "Watermelon Music",
+          "duracion": "3:35"
+        },
+        {
+          "id": "w_yYN_bksyk",
+          "titulo": "Shakira — La Tortura (feat. Alejandro Sanz) [Letra]",
+          "canal": "armxndo",
+          "duracion": "3:35"
+        },
+        {
+          "id": "QXx5Yf2IhRY",
+          "titulo": "Shakira - La Tortura ft. Alejandro Sanz (Audio)",
+          "canal": "AlexAraujoVEVO",
+          "duracion": "3:34"
+        }
+      ]
+    },
+    {
+      "artista": "Estopa",
+      "titulo": "Como Camarón",
+      "inicio": 50,
+      "video": {
+        "id": "JmP89cIGJZM",
+        "titulo": "Estopa - Como Camaron (Videoclip)",
+        "canal": "Estopa",
+        "duracion": "3:28"
+      },
+      "resultados": [
+        {
+          "id": "JmP89cIGJZM",
+          "titulo": "Estopa - Como Camaron (Videoclip)",
+          "canal": "Estopa",
+          "duracion": "3:28"
+        },
+        {
+          "id": "SW8GZDE397U",
+          "titulo": "Como Camarón Estopa",
+          "canal": "Remix, rumbas y más VEVO",
+          "duracion": "3:27"
+        },
+        {
+          "id": "v-Uo0jqaS6g",
+          "titulo": "08. Como Camarón - Estopa [ 01. Estopa(1999) ]",
+          "canal": "Música Top",
+          "duracion": "3:25"
+        },
+        {
+          "id": "KWr1a9_L-LM",
+          "titulo": "Estopa interpreta \"Como Camarón\" y el Rey se rinde ante su actuación",
+          "canal": "LDcultura",
+          "duracion": "4:08"
+        },
+        {
+          "id": "x4WTLauvQ5U",
+          "titulo": "Como Camarón",
+          "canal": "Estopa",
+          "duracion": "3:22"
+        }
+      ]
+    },
+    {
+      "artista": "La Oreja de Van Gogh",
+      "titulo": "Rosas",
+      "inicio": 60,
+      "video": {
+        "id": "nYnLVWXmRm8",
+        "titulo": "La Oreja de Van Gogh - Rosas (Vídeo Oficial)",
+        "canal": "La Oreja de Van Gogh",
+        "duracion": "3:52"
+      },
+      "resultados": [
+        {
+          "id": "nYnLVWXmRm8",
+          "titulo": "La Oreja de Van Gogh - Rosas (Vídeo Oficial)",
+          "canal": "La Oreja de Van Gogh",
+          "duracion": "3:52"
+        },
+        {
+          "id": "ahLfdYalh_E",
+          "titulo": "La Oreja de Van Gogh - Rosas (Letra\\Lyrics)",
+          "canal": "Ritmo y Pasión",
+          "duracion": "3:57"
+        },
+        {
+          "id": "Vsc2ZqPLpxg",
+          "titulo": "La Oreja De Van Gogh - Rosas",
+          "canal": "Angel Arturo",
+          "duracion": "3:57"
+        },
+        {
+          "id": "XIqWN4Ce7yM",
+          "titulo": "La Oreja de Van Gogh - Rosas (En Directo) Premios Juventud 2026 | HD - HQ",
+          "canal": "JLetras",
+          "duracion": "4:03"
+        },
+        {
+          "id": "eWL9M54DI5I",
+          "titulo": "La Oreja de Van Gogh MIX Grandes Exitos 2026 - Rosas, La Playa, Jueves, Puedes Contar Conmigo",
+          "canal": "Vibra Española",
+          "duracion": "1:18:48"
+        }
+      ]
+    },
+    {
+      "artista": "Juanes",
+      "titulo": "La Camisa Negra",
+      "inicio": 45,
+      "video": {
+        "id": "kRt2sRyup6A",
+        "titulo": "Juanes - La Camisa Negra",
+        "canal": "Juanes",
+        "duracion": "4:08"
+      },
+      "resultados": [
+        {
+          "id": "kRt2sRyup6A",
+          "titulo": "Juanes - La Camisa Negra",
+          "canal": "Juanes",
+          "duracion": "4:08"
+        },
+        {
+          "id": "cnRk6PFlgCg",
+          "titulo": "Juanes - La Camisa Negra (Letra)",
+          "canal": "Pulso Latino",
+          "duracion": "3:38"
+        },
+        {
+          "id": "pEMD-V32PZA",
+          "titulo": "Juanes - La Camisa Negra (Audio)",
+          "canal": "Juanes",
+          "duracion": "3:37"
+        },
+        {
+          "id": "OoZDHPp92aY",
+          "titulo": "Juanes - La Camisa Negra (Lyrics/letra)",
+          "canal": "Stewart Rachel",
+          "duracion": "17:51"
+        },
+        {
+          "id": "J3eqAxYPkmA",
+          "titulo": "Juanes - La Camisa Negra (MTV Unplugged)",
+          "canal": "Juanes",
+          "duracion": "3:51"
+        }
+      ]
+    },
+    {
+      "artista": "Amaral",
+      "titulo": "Sin Ti No Soy Nada",
+      "inicio": 70,
+      "video": {
+        "id": "qcC92ZnhGQY",
+        "titulo": "Amaral - Sin ti no soy nada (Videoclip Oficial)",
+        "canal": "Warner Music Spain Archivos",
+        "duracion": "4:24"
+      },
+      "resultados": [
+        {
+          "id": "qcC92ZnhGQY",
+          "titulo": "Amaral - Sin ti no soy nada (Videoclip Oficial)",
+          "canal": "Warner Music Spain Archivos",
+          "duracion": "4:24"
+        },
+        {
+          "id": "6b9AHPopkXw",
+          "titulo": "1. Sin ti no soy nada (Amaral)",
+          "canal": "Un día más con Amaral",
+          "duracion": "4:24"
+        },
+        {
+          "id": "nZzoBKbci5A",
+          "titulo": "Sin ti no soy nada Amaral - letra",
+          "canal": "Gole 2001",
+          "duracion": "4:29"
+        },
+        {
+          "id": "jdmx-0PgSKs",
+          "titulo": "Sin ti no soy nada (2012 Remastered Version)",
+          "canal": "Amaral Oficial",
+          "duracion": "4:27"
+        },
+        {
+          "id": "Bk32tt6sNlI",
+          "titulo": "SIN TI NO SOY NADA (AMARAL) EN VIVO 2002",
+          "canal": "FMSUMMER949",
+          "duracion": "4:37"
+        }
+      ]
+    },
+    {
+      "artista": "Alejandro Sanz",
+      "titulo": "Corazón Partío",
+      "inicio": 55,
+      "video": {
+        "id": "ZMUqIoDtSwc",
+        "titulo": "Alejandro Sanz - Corazon Partio [Latin Mix] (Official Music Video)",
+        "canal": "Warner Música",
+        "duracion": "4:42"
+      },
+      "resultados": [
+        {
+          "id": "ZMUqIoDtSwc",
+          "titulo": "Alejandro Sanz - Corazon Partio [Latin Mix] (Official Music Video)",
+          "canal": "Warner Música",
+          "duracion": "4:42"
+        },
+        {
+          "id": "ALbxIboSbMU",
+          "titulo": "Corazón partío",
+          "canal": "Alejandro Sanz",
+          "duracion": "5:01"
+        },
+        {
+          "id": "T5W1wCgCEJ4",
+          "titulo": "Alejandro Sanz - Corazón Partio | Lyrics/Letra",
+          "canal": "Michael Lyrics",
+          "duracion": "5:49"
+        },
+        {
+          "id": "N97ZdQ2L9O8",
+          "titulo": "ALEJANDRO SANZ - CORAZÓN PARTÍO",
+          "canal": "Angel Arturo",
+          "duracion": "5:40"
+        },
+        {
+          "id": "VVxMkb87UaU",
+          "titulo": "Alejandro Sanz Mix Románticas - Las canciones más escuchadas en 2021",
+          "canal": "Light Music",
+          "duracion": "1:10:02"
+        }
+      ]
+    },
+    {
+      "artista": "Paulina Rubio",
+      "titulo": "Ni Una Sola Palabra",
+      "inicio": 40,
+      "video": {
+        "id": "Kkdhtb9DVWQ",
+        "titulo": "Paulina Rubio - Ni Una Sola Palabra",
+        "canal": "Paulina Rubio",
+        "duracion": "3:48"
+      },
+      "resultados": [
+        {
+          "id": "Kkdhtb9DVWQ",
+          "titulo": "Paulina Rubio - Ni Una Sola Palabra",
+          "canal": "Paulina Rubio",
+          "duracion": "3:48"
+        },
+        {
+          "id": "9mBi3F3KJ1g",
+          "titulo": "Paulina Rubio - Ni Una Sola Palabra",
+          "canal": "Reina del Pop Latino",
+          "duracion": "3:46"
+        },
+        {
+          "id": "d_AzaYv7-Xw",
+          "titulo": "Paulina Rubio — Ni Una Sola Palabra [Letra]",
+          "canal": "armxndo",
+          "duracion": "3:46"
+        },
+        {
+          "id": "qIXNrUOH9LI",
+          "titulo": "Paulina Rubio - Ni Una Sola Palabra (Remastered) En Vivo TV Esp. 2007 HD",
+          "canal": "Omster 12",
+          "duracion": "3:47"
+        },
+        {
+          "id": "UchMdS5hLx4",
+          "titulo": "PAULINA RUBIO MIX - Y Yo Sigo Aquí, Ni Una Sola Palabra ... Éxitos Pop de Paulina Rubio 2025",
+          "canal": "Skills Deejay",
+          "duracion": "37:34"
+        }
+      ]
+    },
+    {
+      "artista": "El Canto del Loco",
+      "titulo": "Zapatillas",
+      "inicio": 38,
+      "video": {
+        "id": "nHxam-MQg-o",
+        "titulo": "El Canto del Loco - Zapatillas (Videoclip)",
+        "canal": "El Canto del Loco",
+        "duracion": "2:52"
+      },
+      "resultados": [
+        {
+          "id": "nHxam-MQg-o",
+          "titulo": "El Canto del Loco - Zapatillas (Videoclip)",
+          "canal": "El Canto del Loco",
+          "duracion": "2:52"
+        },
+        {
+          "id": "g7MspnQYN9E",
+          "titulo": "El canto del loco - Zapatillas (2.005)",
+          "canal": "Chapuzasmix",
+          "duracion": "2:53"
+        },
+        {
+          "id": "iVKWlyrR6IE",
+          "titulo": "El Canto del Loco MIX songs 💚 El Canto del Loco Top Songs 💚 El Canto del Loco Full Album",
+          "canal": "HIP ZAAD OFFICIAL",
+          "duracion": "28:25"
+        },
+        {
+          "id": "jL66Ar5-ixo",
+          "titulo": "Zapatillas",
+          "canal": "El Canto del Loco",
+          "duracion": "2:47"
+        },
+        {
+          "id": "Oukwim3UyRs",
+          "titulo": "El Canto del Loco - Zapatillas // Letra",
+          "canal": "InfluenceLab",
+          "duracion": "2:53"
+        }
+      ]
+    },
+    {
+      "artista": "David Bisbal",
+      "titulo": "Ave María",
+      "inicio": 45,
+      "video": {
+        "id": "gra-sIV1n4U",
+        "titulo": "David Bisbal - Ave María",
+        "canal": "David Bisbal",
+        "duracion": "3:30"
+      },
+      "resultados": [
+        {
+          "id": "gra-sIV1n4U",
+          "titulo": "David Bisbal - Ave María",
+          "canal": "David Bisbal",
+          "duracion": "3:30"
+        },
+        {
+          "id": "Xq30q9ICRwQ",
+          "titulo": "Ave Maria - David Bisbal  (Con letra)",
+          "canal": "verdol4g4",
+          "duracion": "3:30"
+        },
+        {
+          "id": "3hTzEvlWyPg",
+          "titulo": "David Bisbal-Ave María (Audio)",
+          "canal": "Sergio Sànchez Lozano",
+          "duracion": "3:33"
+        },
+        {
+          "id": "y2pLlvZl6Bg",
+          "titulo": "David Bisbal - Ave María (Audio)",
+          "canal": "SpainDS2.4D",
+          "duracion": "3:31"
+        },
+        {
+          "id": "l9ydkeTe0EQ",
+          "titulo": "Ave Maria (2007 Version)",
+          "canal": "David Bisbal",
+          "duracion": "3:29"
+        }
+      ]
+    },
+    {
+      "artista": "Daddy Yankee",
+      "titulo": "Gasolina",
+      "inicio": 30,
+      "video": {
+        "id": "CCF1_jI8Prk",
+        "titulo": "Daddy Yankee - Gasolina (Video Oficial)",
+        "canal": "Daddy Yankee",
+        "duracion": "4:14"
+      },
+      "resultados": [
+        {
+          "id": "CCF1_jI8Prk",
+          "titulo": "Daddy Yankee - Gasolina (Video Oficial)",
+          "canal": "Daddy Yankee",
+          "duracion": "4:14"
+        },
+        {
+          "id": "GJP9ZTsgxJs",
+          "titulo": "Daddy Yankee - Gasolina",
+          "canal": "Music - Topic",
+          "duracion": "3:13"
+        },
+        {
+          "id": "q6pbjleOHME",
+          "titulo": "Gasolina (Lyrics) - Daddy Yankee",
+          "canal": "music mingle",
+          "duracion": "3:12"
+        },
+        {
+          "id": "2CiHQpN58Mo",
+          "titulo": "Daddy Yankee - Gasolina (Video Lyric Oficial)",
+          "canal": "Daddy Yankee",
+          "duracion": "3:18"
+        },
+        {
+          "id": "DYw2yFp6hfE",
+          "titulo": "Daddy Yankee - Gasolina (Vídeo) [Clásico Reggaetonero]",
+          "canal": "Clásico Reggaetonero",
+          "duracion": "3:14"
+        }
+      ]
+    },
+    {
+      "artista": "Fito & Fitipaldis",
+      "titulo": "Soldadito Marinero",
+      "inicio": 50,
+      "video": {
+        "id": "GxQjx7FkmNA",
+        "titulo": "Fito & Fitipaldis - Soldadito marinero (Videoclip oficial)",
+        "canal": "Fito&Fitipaldis",
+        "duracion": "4:00"
+      },
+      "resultados": [
+        {
+          "id": "GxQjx7FkmNA",
+          "titulo": "Fito & Fitipaldis - Soldadito marinero (Videoclip oficial)",
+          "canal": "Fito&Fitipaldis",
+          "duracion": "4:00"
+        },
+        {
+          "id": "RGimnBDtNQI",
+          "titulo": "Fito & Fitipaldis - Soldadito marinero (Directo 2004)",
+          "canal": "Fito&Fitipaldis",
+          "duracion": "7:22"
+        },
+        {
+          "id": "l0ug8aH6fEU",
+          "titulo": "Fito y Fitipaldis -  Soldadito Marinero (Con letra)",
+          "canal": "Elena Hernández",
+          "duracion": "3:55"
+        },
+        {
+          "id": "iUXs4Nt3Y7Y",
+          "titulo": "Fito & Fitipaldis - Por la boca vive el pez (Videoclip oficial)",
+          "canal": "Fito&Fitipaldis",
+          "duracion": "4:31"
+        },
+        {
+          "id": "N2WXt41mH-M",
+          "titulo": "Fito & Fitipaldis Sus Mejores Éxitos MIX 2021 - Fito & Fitipaldis Éxitos 2021",
+          "canal": "Viola Collum",
+          "duracion": "1:25:02"
+        }
+      ]
+    },
+    {
+      "artista": "Enrique Iglesias",
+      "titulo": "Bailando",
+      "inicio": 60,
+      "video": {
+        "id": "NUsoVlDFqZg",
+        "titulo": "Enrique Iglesias - Bailando ft. Descemer Bueno, Gente De Zona",
+        "canal": "Enrique Iglesias",
+        "duracion": "4:47"
+      },
+      "resultados": [
+        {
+          "id": "NUsoVlDFqZg",
+          "titulo": "Enrique Iglesias - Bailando ft. Descemer Bueno, Gente De Zona",
+          "canal": "Enrique Iglesias",
+          "duracion": "4:47"
+        },
+        {
+          "id": "b8I-7Wk_Vbc",
+          "titulo": "Enrique Iglesias - Bailando ft. Sean Paul, Descemer Bueno, Gente De Zona",
+          "canal": "Enrique Iglesias",
+          "duracion": "4:32"
+        },
+        {
+          "id": "5sye_VxmNZA",
+          "titulo": "Enrique Iglesias - Bailamos",
+          "canal": "Enrique Iglesias",
+          "duracion": "3:36"
+        },
+        {
+          "id": "ga4_APeE4Yg",
+          "titulo": "Enrique Iglesias - Bailando ft. Descemer Bueno, Gente De Zona (Letra)",
+          "canal": "TED SAD",
+          "duracion": "4:03"
+        },
+        {
+          "id": "BjzWnMBWVOY",
+          "titulo": "Enrique Iglesias - Bailando feat. Descemer Bueno, Gente de Zona (Sex And Love Tour Live Version)",
+          "canal": "by_ja",
+          "duracion": "6:34"
+        }
+      ]
+    },
+    {
+      "artista": "Melendi",
+      "titulo": "Caminando Por La Vida",
+      "inicio": 45,
+      "video": {
+        "id": "eznXJEjvHbk",
+        "titulo": "Melendi - Caminando Por La Vida (Videoclip Oficial)",
+        "canal": "Warner Music Spain Archivos",
+        "duracion": "3:24"
+      },
+      "resultados": [
+        {
+          "id": "eznXJEjvHbk",
+          "titulo": "Melendi - Caminando Por La Vida (Videoclip Oficial)",
+          "canal": "Warner Music Spain Archivos",
+          "duracion": "3:24"
+        },
+        {
+          "id": "CRdoEIeTEWw",
+          "titulo": "Caminando por la vida (Remasterized)",
+          "canal": "Melendi",
+          "duracion": "3:58"
+        },
+        {
+          "id": "kN_Cxar532k",
+          "titulo": "Melendi - Caminando Por La Vida  (Lyrics)",
+          "canal": " LeexuuriiMusic",
+          "duracion": "4:24"
+        },
+        {
+          "id": "ivFX1_TSQFY",
+          "titulo": "Melendi - Caminando por la vida (Videoclip Oficial)",
+          "canal": "Melendi",
+          "duracion": "3:25"
+        },
+        {
+          "id": "L9dblXR2y2U",
+          "titulo": "Melendi - Caminando por la vida",
+          "canal": "Guerrero de Melendi",
+          "duracion": "3:24"
+        }
+      ]
+    },
+    {
+      "artista": "Nena Daconte",
+      "titulo": "En Qué Estrella Estará",
+      "inicio": 55,
+      "video": {
+        "id": "qZ1H-e8Z-LY",
+        "titulo": "Nena Daconte - En Que Estrella Estara",
+        "canal": "Nena Daconte",
+        "duracion": "2:28"
+      },
+      "resultados": [
+        {
+          "id": "qZ1H-e8Z-LY",
+          "titulo": "Nena Daconte - En Que Estrella Estara",
+          "canal": "Nena Daconte",
+          "duracion": "2:28"
+        },
+        {
+          "id": "QMxrKvPyMa0",
+          "titulo": "en qué estrella estará; nena daconte (letra)",
+          "canal": "A.",
+          "duracion": "2:25"
+        },
+        {
+          "id": "rd8ZFtD5rM8",
+          "titulo": "Nena Daconte - Tenia Tanto Que Darte",
+          "canal": "Nena Daconte",
+          "duracion": "3:38"
+        },
+        {
+          "id": "S__AHRvxu2U",
+          "titulo": "Nena Daconte - En que estrella estará (live)",
+          "canal": "Nena Daconte",
+          "duracion": "2:33"
+        },
+        {
+          "id": "HElIhkuOAdI",
+          "titulo": "PRIMAVERA POP 2007: Nena Daconte - En que estrella estará",
+          "canal": "LOS40",
+          "duracion": "4:11"
+        }
+      ]
+    },
+    {
+      "artista": "Pereza",
+      "titulo": "Princesas",
+      "inicio": 40,
+      "video": {
+        "id": "A9UdCLGvjXg",
+        "titulo": "Pereza - Princesas (Videoclip)",
+        "canal": "Pereza",
+        "duracion": "3:38"
+      },
+      "resultados": [
+        {
+          "id": "A9UdCLGvjXg",
+          "titulo": "Pereza - Princesas (Videoclip)",
+          "canal": "Pereza",
+          "duracion": "3:38"
+        },
+        {
+          "id": "vtq1iD967Xw",
+          "titulo": "Pereza - Princesas",
+          "canal": "Joel Picón Lor",
+          "duracion": "3:35"
+        },
+        {
+          "id": "IXEadWUoHZs",
+          "titulo": "Pereza - Princesas (Directo Tivoli)",
+          "canal": "Pereza",
+          "duracion": "7:27"
+        },
+        {
+          "id": "lziII_erRLI",
+          "titulo": "Pereza - Princesas",
+          "canal": "fraty music",
+          "duracion": "3:38"
+        },
+        {
+          "id": "WGBX8oClNL8",
+          "titulo": "Pereza – Princesas [Letra]",
+          "canal": "Rebel Rock",
+          "duracion": "3:38"
+        }
+      ]
+    }
+  ]
+}

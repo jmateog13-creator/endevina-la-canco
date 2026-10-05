@@ -1,0 +1,827 @@
+{
+  "nombre": "Top 20 en català (2022-2026)",
+  "ajustes": {
+    "pregunta": "cancion",
+    "duracion": 5,
+    "tiempo": 15,
+    "opciones": 4,
+    "inicio": 30,
+    "aleatorio": true,
+    "extra": []
+  },
+  "canciones": [
+    {
+      "artista": "Figa Flawas",
+      "titulo": "La Marina Sta Morena",
+      "inicio": 30,
+      "video": {
+        "id": "WakP10DXiD0",
+        "titulo": "Figa Flawas - LA MARINA STA MORENA (Videoclip Oficial)",
+        "canal": "Figa Flawas",
+        "duracion": "2:19"
+      },
+      "resultados": [
+        {
+          "id": "WakP10DXiD0",
+          "titulo": "Figa Flawas - LA MARINA STA MORENA (Videoclip Oficial)",
+          "canal": "Figa Flawas",
+          "duracion": "2:19"
+        },
+        {
+          "id": "hDupK_0xj88",
+          "titulo": "Figa Flawas - LA MARINA STA MORENA  (Lyrics / Letra)",
+          "canal": "Mexi Music",
+          "duracion": "2:12"
+        },
+        {
+          "id": "cJMkph_-1fY",
+          "titulo": "Figa Flawas - LA MARINA STA MORENA (Dj Osmii Extended)",
+          "canal": "Dj Osmii",
+          "duracion": "2:26"
+        },
+        {
+          "id": "GTgxamtK4t4",
+          "titulo": "LA MARINA STA MORENA | FRESH DANCE PARTY 2025 by Fantasia Animación",
+          "canal": "Fantasía Animación",
+          "duracion": "2:12"
+        },
+        {
+          "id": "4oxreBunyhA",
+          "titulo": "Blanca Paloma: \"La Marina sta Morena\", de Figa Flawas - Zenit",
+          "canal": "3Cat",
+          "duracion": "1:27"
+        }
+      ]
+    },
+    {
+      "artista": "The Tyets",
+      "titulo": "Coti x Coti",
+      "inicio": 30,
+      "video": {
+        "id": "Kx73OzRj7qE",
+        "titulo": "The Tyets - Coti x Coti (Videoclip Oficial)",
+        "canal": "The Tyets",
+        "duracion": "2:58"
+      },
+      "resultados": [
+        {
+          "id": "Kx73OzRj7qE",
+          "titulo": "The Tyets - Coti x Coti (Videoclip Oficial)",
+          "canal": "The Tyets",
+          "duracion": "2:58"
+        },
+        {
+          "id": "8uhwokO7YEY",
+          "titulo": "COTI X COTI - The Tyets (Lletra)",
+          "canal": "Lletra.EnValencià",
+          "duracion": "2:30"
+        },
+        {
+          "id": "g4JcqBibUwk",
+          "titulo": "Coti x Coti (Mon DJ & DJ Capde Oficial Remix)",
+          "canal": "The Tyets",
+          "duracion": "2:34"
+        },
+        {
+          "id": "-GOPJnBytro",
+          "titulo": "The Tyets, Cobla Sant Jordi - Coti x Coti (En Directe) [L'ÈPIC FINAL DE GIRA al Sant Jordi Club]",
+          "canal": "The Tyets y Cobla Sant Jordi - Ciutat de Barcelona",
+          "duracion": "3:17"
+        },
+        {
+          "id": "-x91uYurtQw",
+          "titulo": "Coti x coti - The Tyets. Subtitulado al español",
+          "canal": "Pallaritu",
+          "duracion": "2:35"
+        }
+      ]
+    },
+    {
+      "artista": "Oques Grasses",
+      "titulo": "Sort de tu",
+      "inicio": 30,
+      "video": {
+        "id": "cyQz_HDm-Is",
+        "titulo": "OQUES GRASSES - SORT DE TU",
+        "canal": "Oques Grasses",
+        "duracion": "2:48"
+      },
+      "resultados": [
+        {
+          "id": "cyQz_HDm-Is",
+          "titulo": "OQUES GRASSES - SORT DE TU",
+          "canal": "Oques Grasses",
+          "duracion": "2:48"
+        },
+        {
+          "id": "g8Kmt7gwbMw",
+          "titulo": "OQUES GRASSES - SORT DE TU (Lletra)",
+          "canal": "Mer :)",
+          "duracion": "2:48"
+        },
+        {
+          "id": "yGO3UPPuVKs",
+          "titulo": "OQUES GRASSES - LA GENT QUE ESTIMO & Rita Payés",
+          "canal": "Oques Grasses",
+          "duracion": "4:00"
+        },
+        {
+          "id": "GJ4EHjKI8YA",
+          "titulo": "Oques Grasses - Sort de tu @ Canet Rock 024",
+          "canal": "Mark Flaix",
+          "duracion": "2:37"
+        },
+        {
+          "id": "hDlEv7GBQF4",
+          "titulo": "😍 Enamorats d'aquesta versió de \"Sort de tu\" d'Oques Grasses",
+          "canal": "3Cat",
+          "duracion": "2:42"
+        }
+      ]
+    },
+    {
+      "artista": "Marlena i The Tyets",
+      "titulo": "Estaré millor demà",
+      "inicio": 30,
+      "video": {
+        "id": "VBXQHkJBRhs",
+        "titulo": "estaré millor demà",
+        "canal": "MARLENA",
+        "duracion": "3:05"
+      },
+      "resultados": [
+        {
+          "id": "g-vZDZV43Vk",
+          "titulo": "Marlena & The Tyets - \"Estaré millor demà\" (LateXou con Marc Giró 2024)",
+          "canal": "RTVE Música",
+          "duracion": "3:15"
+        },
+        {
+          "id": "GRth-mnGusM",
+          "titulo": "Estaré Millor Demà // Marlena X Tyets #officialvideo #music #musicvideo #rolitas #musica",
+          "canal": "Whiinybarbie",
+          "duracion": "3:05"
+        },
+        {
+          "id": "VBXQHkJBRhs",
+          "titulo": "estaré millor demà",
+          "canal": "MARLENA",
+          "duracion": "3:05"
+        },
+        {
+          "id": "GvUJsCouni0",
+          "titulo": "The Tyets, Marlena - Estaré millor demà (En Directe) [L'ÈPIC FINAL DE GIRA al Sant Jordi Club]",
+          "canal": "The Tyets y MARLENA",
+          "duracion": "2:11"
+        },
+        {
+          "id": "TyGsY9LuHFI",
+          "titulo": "Marlena x TheTyets Itaca 2024 - Estaré millor demà",
+          "canal": "auger",
+          "duracion": "3:24"
+        }
+      ]
+    },
+    {
+      "artista": "Figa Flawas",
+      "titulo": "Que no s'acabi",
+      "inicio": 30,
+      "video": {
+        "id": "g21fcoUkag0",
+        "titulo": "Figa Flawas - QUE NO S'ACABI (Videoclip Oficial)",
+        "canal": "Figa Flawas",
+        "duracion": "3:24"
+      },
+      "resultados": [
+        {
+          "id": "g21fcoUkag0",
+          "titulo": "Figa Flawas - QUE NO S'ACABI (Videoclip Oficial)",
+          "canal": "Figa Flawas",
+          "duracion": "3:24"
+        },
+        {
+          "id": "MuhPRegAHpU",
+          "titulo": "Figa Flawas - SOLUCIONS i NO PROBLEMES",
+          "canal": "Figa Flawas",
+          "duracion": "2:21"
+        },
+        {
+          "id": "8FSAPOMuKPE",
+          "titulo": "Figa Flawas - Que No S'Acabi (Lletra)",
+          "canal": "NZC",
+          "duracion": "3:15"
+        },
+        {
+          "id": "1dwJEiwLdTA",
+          "titulo": "QUE NO S'ACABI MAI - Videoclip oficial",
+          "canal": "JAVITO",
+          "duracion": "2:49"
+        },
+        {
+          "id": "S1T8DB076ZM",
+          "titulo": "La colla de \"Jo mai mai\" ho dona tot amb Figa Flawas i el seu \"Que no s'acabi\"",
+          "canal": "3CatFicció",
+          "duracion": "3:12"
+        }
+      ]
+    },
+    {
+      "artista": "Figa Flawas",
+      "titulo": "Solucions i no problemes",
+      "inicio": 30,
+      "video": {
+        "id": "MuhPRegAHpU",
+        "titulo": "Figa Flawas - SOLUCIONS i NO PROBLEMES",
+        "canal": "Figa Flawas",
+        "duracion": "2:21"
+      },
+      "resultados": [
+        {
+          "id": "MuhPRegAHpU",
+          "titulo": "Figa Flawas - SOLUCIONS i NO PROBLEMES",
+          "canal": "Figa Flawas",
+          "duracion": "2:21"
+        },
+        {
+          "id": "g21fcoUkag0",
+          "titulo": "Figa Flawas - QUE NO S'ACABI (Videoclip Oficial)",
+          "canal": "Figa Flawas",
+          "duracion": "3:24"
+        },
+        {
+          "id": "kGhnoECBKBs",
+          "titulo": "Figa Flawas - a la freSka (Videoclip Oficial)",
+          "canal": "Figa Flawas",
+          "duracion": "2:59"
+        },
+        {
+          "id": "QZFtJNiLJGo",
+          "titulo": "SOLUCIONS i NO PROBLEMES (Remix)",
+          "canal": "Figa Flawas",
+          "duracion": "2:06"
+        },
+        {
+          "id": "7ibW5hrCNW0",
+          "titulo": "Figa Flawas - Solucions i no problemes @ Canet Rock 024",
+          "canal": "Mark Flaix",
+          "duracion": "2:25"
+        }
+      ]
+    },
+    {
+      "artista": "Mushkaa",
+      "titulo": "SexeSexy",
+      "inicio": 30,
+      "video": {
+        "id": "5bdsZjgMOLY",
+        "titulo": "Mushkaa, Bad Gyal - SexeSexy (Videoclip)",
+        "canal": "Mushkaa",
+        "duracion": "3:52"
+      },
+      "resultados": [
+        {
+          "id": "5bdsZjgMOLY",
+          "titulo": "Mushkaa, Bad Gyal - SexeSexy (Videoclip)",
+          "canal": "Mushkaa",
+          "duracion": "3:52"
+        }
+      ]
+    },
+    {
+      "artista": "Oques Grasses",
+      "titulo": "Toca",
+      "inicio": 30,
+      "video": {
+        "id": "T-fVXh2KHxM",
+        "titulo": "OQUES GRASSES - TOCA & FIGA FLAWAS",
+        "canal": "Oques Grasses",
+        "duracion": "2:26"
+      },
+      "resultados": [
+        {
+          "id": "T-fVXh2KHxM",
+          "titulo": "OQUES GRASSES - TOCA & FIGA FLAWAS",
+          "canal": "Oques Grasses",
+          "duracion": "2:26"
+        },
+        {
+          "id": "kt0YZiwHwmA",
+          "titulo": "Oques Grasses & Figa Flawas - Toca @ Canet Rock 024",
+          "canal": "Mark Flaix",
+          "duracion": "2:44"
+        },
+        {
+          "id": "cyQz_HDm-Is",
+          "titulo": "OQUES GRASSES - SORT DE TU",
+          "canal": "Oques Grasses",
+          "duracion": "2:48"
+        },
+        {
+          "id": "ksLd3Tm_uLs",
+          "titulo": "OQUES GRASSES - ELEFANTS",
+          "canal": "Oques Grasses",
+          "duracion": "4:02"
+        },
+        {
+          "id": "lpTGUFuEOQw",
+          "titulo": "OQUES GRASSES - DE BONESH",
+          "canal": "Oques Grasses",
+          "duracion": "4:06"
+        }
+      ]
+    },
+    {
+      "artista": "Figa Flawas",
+      "titulo": "Diabla",
+      "inicio": 30,
+      "video": {
+        "id": "yV0ZtyPDe-E",
+        "titulo": "Figa Flawas x Mushkaa - DIABLA",
+        "canal": "Figa Flawas",
+        "duracion": "2:42"
+      },
+      "resultados": [
+        {
+          "id": "yV0ZtyPDe-E",
+          "titulo": "Figa Flawas x Mushkaa - DIABLA",
+          "canal": "Figa Flawas",
+          "duracion": "2:42"
+        }
+      ]
+    },
+    {
+      "artista": "La Fúmiga",
+      "titulo": "Ja dormiré",
+      "inicio": 30,
+      "video": {
+        "id": "GYv0rdQFaE0",
+        "titulo": "La Fúmiga & Figa Flawas - JA DORMIRÉ | Official Music Video",
+        "canal": "La Fúmiga",
+        "duracion": "2:54"
+      },
+      "resultados": [
+        {
+          "id": "GYv0rdQFaE0",
+          "titulo": "La Fúmiga & Figa Flawas - JA DORMIRÉ | Official Music Video",
+          "canal": "La Fúmiga",
+          "duracion": "2:54"
+        },
+        {
+          "id": "456xxzD4dww",
+          "titulo": "Ja dormiré- LA FÚMIGA & FIGA FLAWAS(💛Català/❤️Español/ 💜English LYRICS)",
+          "canal": "CATALAN LYRICS @ther_bcn",
+          "duracion": "2:53"
+        },
+        {
+          "id": "daWpCNgXGMo",
+          "titulo": "Oliver: \"Ja dormiré\", de Figa Flawas i La Fúmiga | Eufòria",
+          "canal": "3Cat y SX3",
+          "duracion": "1:59"
+        },
+        {
+          "id": "sYFQuyB0eLI",
+          "titulo": "La Fúmiga & Figa Flawas - Ja dormiré @ Canet Rock 024",
+          "canal": "Mark Flaix",
+          "duracion": "3:13"
+        },
+        {
+          "id": "wm8cyg-wgwQ",
+          "titulo": "La Fúmiga - LA PENÚLTIMA | Official Music Video",
+          "canal": "La Fúmiga",
+          "duracion": "3:06"
+        }
+      ]
+    },
+    {
+      "artista": "Oques Grasses",
+      "titulo": "Córrer pels camps",
+      "inicio": 30,
+      "video": {
+        "id": "wzklKdxS5BU",
+        "titulo": "OQUES GRASSES - CÓRRER PELS CAMPS",
+        "canal": "Oques Grasses",
+        "duracion": "2:39"
+      },
+      "resultados": [
+        {
+          "id": "wzklKdxS5BU",
+          "titulo": "OQUES GRASSES - CÓRRER PELS CAMPS",
+          "canal": "Oques Grasses",
+          "duracion": "2:39"
+        },
+        {
+          "id": "iNCobVCKRK0",
+          "titulo": "Oques grasses - Córrer pels camps (Sub Español/Catalán)",
+          "canal": "Luan Mayer ",
+          "duracion": "2:39"
+        },
+        {
+          "id": "0lifznH6HG0",
+          "titulo": "OQUES GRASSES - PINGPONG",
+          "canal": "Oques Grasses",
+          "duracion": "2:37"
+        },
+        {
+          "id": "HVTf9Pyc_C0",
+          "titulo": "Oques Grasses Còrrer Pels Camps 2025 - Cabró Rock Castanyada Montmeló",
+          "canal": "Miki",
+          "duracion": "2:23"
+        },
+        {
+          "id": "NrpRoMeQsp8",
+          "titulo": "OQUES GRASSES - SEREM OCELLS (Fans del Sol)",
+          "canal": "Oques Grasses",
+          "duracion": "3:58"
+        }
+      ]
+    },
+    {
+      "artista": "Julieta",
+      "titulo": "Com el dia i la nit",
+      "inicio": 30,
+      "video": {
+        "id": "F8QeWZKMp0U",
+        "titulo": "OQUES GRASSES - COM EL DIA I LA NIT & JULIETA",
+        "canal": "Oques Grasses",
+        "duracion": "4:14"
+      },
+      "resultados": [
+        {
+          "id": "F8QeWZKMp0U",
+          "titulo": "OQUES GRASSES - COM EL DIA I LA NIT & JULIETA",
+          "canal": "Oques Grasses",
+          "duracion": "4:14"
+        },
+        {
+          "id": "ktq2ckqFH90",
+          "titulo": "Oques Grasses & Julieta - Com el dia i la nit @ Canet Rock 024",
+          "canal": "Mark Flaix",
+          "duracion": "4:17"
+        },
+        {
+          "id": "-6m3MzkF1q8",
+          "titulo": "☀️ 🌑 Com el dia i la nit - Oques Grasses & Julieta (CAT/ENG)",
+          "canal": "Catalan Lyrics",
+          "duracion": "4:14"
+        },
+        {
+          "id": "VKrMY5FBMmQ",
+          "titulo": "Julieta • Concert Canet Rock 2024 - Cari, Enamorada de tu, Com el dia i la nit, Lokura...",
+          "canal": "Just Live Music",
+          "duracion": "56:06"
+        },
+        {
+          "id": "JGpN9QhrYpA",
+          "titulo": "COM EL DIA I LA NIT amb Julieta - OQUES GRASSES (LA MERCÈ 2024)",
+          "canal": "DE FESTI",
+          "duracion": "4:11"
+        }
+      ]
+    },
+    {
+      "artista": "Figa Flawas",
+      "titulo": "a la freSka",
+      "inicio": 30,
+      "video": {
+        "id": "kGhnoECBKBs",
+        "titulo": "Figa Flawas - a la freSka (Videoclip Oficial)",
+        "canal": "Figa Flawas",
+        "duracion": "2:59"
+      },
+      "resultados": [
+        {
+          "id": "kGhnoECBKBs",
+          "titulo": "Figa Flawas - a la freSka (Videoclip Oficial)",
+          "canal": "Figa Flawas",
+          "duracion": "2:59"
+        },
+        {
+          "id": "ENVk1Z8CSc0",
+          "titulo": "A la freska - Figa Flawas (Lletra / Lyrics)",
+          "canal": "Francesc Ferre",
+          "duracion": "3:00"
+        },
+        {
+          "id": "lfo-YVy6Pn8",
+          "titulo": "Figa Flawas - Tot Aquest Espectacle (Documental 'a la freSka')",
+          "canal": "Figa Flawas",
+          "duracion": "21:28"
+        },
+        {
+          "id": "g21fcoUkag0",
+          "titulo": "Figa Flawas - QUE NO S'ACABI (Videoclip Oficial)",
+          "canal": "Figa Flawas",
+          "duracion": "3:24"
+        },
+        {
+          "id": "9Wzd3qHFMhs",
+          "titulo": "A la freSka - Figa Flawas. KARAOKE",
+          "canal": "DJ Puyo",
+          "duracion": "2:57"
+        }
+      ]
+    },
+    {
+      "artista": "The Tyets",
+      "titulo": "Covards",
+      "inicio": 30,
+      "video": {
+        "id": "wczcNZPEl9g",
+        "titulo": "La Fúmiga & The Tyets - COVARDS | Official Music Video",
+        "canal": "La Fúmiga y The Tyets",
+        "duracion": "3:31"
+      },
+      "resultados": [
+        {
+          "id": "wczcNZPEl9g",
+          "titulo": "La Fúmiga & The Tyets - COVARDS | Official Music Video",
+          "canal": "La Fúmiga y The Tyets",
+          "duracion": "3:31"
+        },
+        {
+          "id": "vhLUbyJSgsk",
+          "titulo": "La Fúmiga & The Tyets - Covards (subtítols i lletra en català)",
+          "canal": "Cançons en català amb subtítols",
+          "duracion": "3:11"
+        },
+        {
+          "id": "CIhO4krz6_Y",
+          "titulo": "La Fúmiga - Covards (Festival Revenidas, Vilaxoán 14/09/2024)",
+          "canal": "@mariomartinhoc",
+          "duracion": "2:59"
+        },
+        {
+          "id": "TSdKSmEOvOM",
+          "titulo": "LA FÚMIGA - Cap. 2: HAVIA DE PASSAR feat. The Tyets | VIDEOCLIP | EP Pròxima Parada",
+          "canal": "La Fúmiga y The Tyets",
+          "duracion": "4:07"
+        },
+        {
+          "id": "Kx73OzRj7qE",
+          "titulo": "The Tyets - Coti x Coti (Videoclip Oficial)",
+          "canal": "The Tyets",
+          "duracion": "2:58"
+        }
+      ]
+    },
+    {
+      "artista": "Els Catarres",
+      "titulo": "Cançons d'amor",
+      "inicio": 30,
+      "video": {
+        "id": "YY_jbC6-OiQ",
+        "titulo": "Els Catarres + La Fúmiga - CANÇONS D'AMOR | Official Music Video",
+        "canal": "La Fúmiga",
+        "duracion": "3:49"
+      },
+      "resultados": [
+        {
+          "id": "YY_jbC6-OiQ",
+          "titulo": "Els Catarres + La Fúmiga - CANÇONS D'AMOR | Official Music Video",
+          "canal": "La Fúmiga",
+          "duracion": "3:49"
+        },
+        {
+          "id": "l6xPpm_StTM",
+          "titulo": "La Fúmiga & Els Catarres - Cançons d'amor (subtítols i lletra en català)",
+          "canal": "Cançons en català amb subtítols",
+          "duracion": "2:58"
+        },
+        {
+          "id": "uszLKJzAK7U",
+          "titulo": "CANÇONS D'AMOR - Els Catarres + La Fúmiga (Lletra)",
+          "canal": "Lletra.EnValencià",
+          "duracion": "2:52"
+        },
+        {
+          "id": "1OHHho_30Jg",
+          "titulo": "CANÇONS D'AMOR - ELS CATARRES",
+          "canal": "Marc Moliné",
+          "duracion": "2:39"
+        },
+        {
+          "id": "FN7e6Rv1ETY",
+          "titulo": "Els Catarres & La Fumiga - Cançons d'amor (Karaoke en català)",
+          "canal": "Karaoke en català",
+          "duracion": "3:00"
+        }
+      ]
+    },
+    {
+      "artista": "Julieta",
+      "titulo": "Clar que t'he trobat a faltar",
+      "inicio": 30,
+      "video": {
+        "id": "9Stvfpm0cV4",
+        "titulo": "The Tyets, Julieta - Clar que t'he Trobat a Faltar (Visualizer Oficial) [Èpic Solete]",
+        "canal": "The Tyets y Julieta",
+        "duracion": "3:30"
+      },
+      "resultados": [
+        {
+          "id": "9Stvfpm0cV4",
+          "titulo": "The Tyets, Julieta - Clar que t'he Trobat a Faltar (Visualizer Oficial) [Èpic Solete]",
+          "canal": "The Tyets y Julieta",
+          "duracion": "3:30"
+        },
+        {
+          "id": "KXXk3Sd3qzI",
+          "titulo": "The Tyets & Julieta - Clar que t'he trobat a faltar (subtítols i lletra en català)",
+          "canal": "Cançons en català amb subtítols",
+          "duracion": "3:30"
+        },
+        {
+          "id": "0cc8n3ln5B0",
+          "titulo": "Julieta - Clar que t'he trobat a faltar  (Mercat de la Música Viva de Vic, 2023)",
+          "canal": "Franc La lío",
+          "duracion": "3:43"
+        },
+        {
+          "id": "TCnY9eAs1nk",
+          "titulo": "The Tyets & Julieta - Clar que t'he trobat a faltar @ Sala Apolo",
+          "canal": "Mark Flaix",
+          "duracion": "3:20"
+        },
+        {
+          "id": "sKjisOFNsK0",
+          "titulo": "The Tyets, Mushkaa, Julieta & Cobla Sant Jordi - LA TIETA SESSIONS (Live Session)",
+          "canal": "The Tyets y 2 más",
+          "duracion": "9:33"
+        }
+      ]
+    },
+    {
+      "artista": "Oques Grasses",
+      "titulo": "Jubilar-me",
+      "inicio": 30,
+      "video": {
+        "id": "2GqyieyR3ds",
+        "titulo": "OQUES GRASSES - JUBILAR-ME",
+        "canal": "Oques Grasses",
+        "duracion": "3:09"
+      },
+      "resultados": [
+        {
+          "id": "2GqyieyR3ds",
+          "titulo": "OQUES GRASSES - JUBILAR-ME",
+          "canal": "Oques Grasses",
+          "duracion": "3:09"
+        },
+        {
+          "id": "-mRJ5R6JwWQ",
+          "titulo": "Oques Grasses - Jubilar-me @ Canet Rock 024",
+          "canal": "Mark Flaix",
+          "duracion": "3:31"
+        },
+        {
+          "id": "yGO3UPPuVKs",
+          "titulo": "OQUES GRASSES - LA GENT QUE ESTIMO & Rita Payés",
+          "canal": "Oques Grasses",
+          "duracion": "4:00"
+        },
+        {
+          "id": "Nh-Socoh4zI",
+          "titulo": "OQUES GRASSES - PETAR-HO",
+          "canal": "Oques Grasses",
+          "duracion": "3:39"
+        },
+        {
+          "id": "cyQz_HDm-Is",
+          "titulo": "OQUES GRASSES - SORT DE TU",
+          "canal": "Oques Grasses",
+          "duracion": "2:48"
+        }
+      ]
+    },
+    {
+      "artista": "Julieta",
+      "titulo": "No m'estima +",
+      "inicio": 30,
+      "video": {
+        "id": "xgGpXWndy7k",
+        "titulo": "Mushkaa, Julieta - No m'estima + (Videoclip)",
+        "canal": "Mushkaa",
+        "duracion": "3:12"
+      },
+      "resultados": [
+        {
+          "id": "xgGpXWndy7k",
+          "titulo": "Mushkaa, Julieta - No m'estima + (Videoclip)",
+          "canal": "Mushkaa",
+          "duracion": "3:12"
+        },
+        {
+          "id": "wjOikwEYBpM",
+          "titulo": "Julieta - M'oblido d'oblidar-te (Video Oficial)",
+          "canal": "Julieta",
+          "duracion": "2:59"
+        },
+        {
+          "id": "kixUdKOd6ww",
+          "titulo": "Julieta - No m'estima +  (Mercat de la Música Viva de Vic, 2023)",
+          "canal": "Franc La lío",
+          "duracion": "3:11"
+        },
+        {
+          "id": "kGhnoECBKBs",
+          "titulo": "Figa Flawas - a la freSka (Videoclip Oficial)",
+          "canal": "Figa Flawas",
+          "duracion": "2:59"
+        },
+        {
+          "id": "ENVk1Z8CSc0",
+          "titulo": "A la freska - Figa Flawas (Lletra / Lyrics)",
+          "canal": "Francesc Ferre",
+          "duracion": "3:00"
+        }
+      ]
+    },
+    {
+      "artista": "La Fúmiga",
+      "titulo": "Finals",
+      "inicio": 30,
+      "video": {
+        "id": "dSkcCIPHcVI",
+        "titulo": "La Fúmiga - Finals | Official Music Video",
+        "canal": "La Fúmiga",
+        "duracion": "3:25"
+      },
+      "resultados": [
+        {
+          "id": "dSkcCIPHcVI",
+          "titulo": "La Fúmiga - Finals | Official Music Video",
+          "canal": "La Fúmiga",
+          "duracion": "3:25"
+        },
+        {
+          "id": "t7ycNbPbE8A",
+          "titulo": "La Fúmiga - GRÀCIES PER TANT | Official Music Video",
+          "canal": "La Fúmiga",
+          "duracion": "3:24"
+        },
+        {
+          "id": "wm8cyg-wgwQ",
+          "titulo": "La Fúmiga - LA PENÚLTIMA | Official Music Video",
+          "canal": "La Fúmiga",
+          "duracion": "3:06"
+        },
+        {
+          "id": "JEoIvH96w8Q",
+          "titulo": "La Fúmiga  - RÈCORD MUNDIAL | Official Music Video",
+          "canal": "La Fúmiga",
+          "duracion": "3:37"
+        },
+        {
+          "id": "TSdKSmEOvOM",
+          "titulo": "LA FÚMIGA - Cap. 2: HAVIA DE PASSAR feat. The Tyets | VIDEOCLIP | EP Pròxima Parada",
+          "canal": "La Fúmiga y The Tyets",
+          "duracion": "4:07"
+        }
+      ]
+    },
+    {
+      "artista": "Ginestà",
+      "titulo": "Tot el que ens queda",
+      "inicio": 30,
+      "video": {
+        "id": "PHZOxr-b2mE",
+        "titulo": "GINESTÀ - TOT EL QUE ENS QUEDA",
+        "canal": "Ginestà Oficial",
+        "duracion": "2:35"
+      },
+      "resultados": [
+        {
+          "id": "PHZOxr-b2mE",
+          "titulo": "GINESTÀ - TOT EL QUE ENS QUEDA",
+          "canal": "Ginestà Oficial",
+          "duracion": "2:35"
+        },
+        {
+          "id": "wI2U-MY3wrI",
+          "titulo": "GINESTÀ - Les coses senzilles",
+          "canal": "Ginestà Oficial",
+          "duracion": "2:39"
+        },
+        {
+          "id": "NVGMUZSS_1M",
+          "titulo": "GINESTÀ amb ALBA ARMENGOU - T'estimo tant (Videoclip oficial)",
+          "canal": "Ginestà Oficial",
+          "duracion": "3:01"
+        },
+        {
+          "id": "ahZXT252Xug",
+          "titulo": "🏆 Ginestà - Tot el que ens queda als Premis RAC105 2025",
+          "canal": "RAC105",
+          "duracion": "2:49"
+        },
+        {
+          "id": "l2YYtNq_Ww0",
+          "titulo": "Ginestà - Tot el que ens queda (subtítols i lletra en català)",
+          "canal": "Cançons en català amb subtítols",
+          "duracion": "2:30"
+        }
+      ]
+    }
+  ],
+  "id": "top-20-en-catala-2022-2026-6abcd47b"
+}

@@ -1,0 +1,740 @@
+{
+  "id": "endevina-l-estil-1",
+  "nombre": "Endevina l'estil 1",
+  "ajustes": {
+    "pregunta": "estil",
+    "duracion": 10,
+    "tiempo": 15,
+    "opciones": 4,
+    "inicio": 30,
+    "aleatorio": true,
+    "extra": []
+  },
+  "canciones": [
+    {
+      "artista": "AC/DC",
+      "titulo": "Highway to Hell",
+      "estil": "Rock",
+      "inicio": 30,
+      "video": {
+        "id": "l482T0yNkeo",
+        "titulo": "AC/DC - Highway to Hell (Official Video)",
+        "canal": "AC/DC",
+        "duracion": "3:28"
+      },
+      "resultados": [
+        {
+          "id": "l482T0yNkeo",
+          "titulo": "AC/DC - Highway to Hell (Official Video)",
+          "canal": "AC/DC",
+          "duracion": "3:28"
+        },
+        {
+          "id": "gEPmA3USJdI",
+          "titulo": "AC/DC - Highway to Hell (Live At River Plate, December 2009)",
+          "canal": "AC/DC",
+          "duracion": "4:45"
+        },
+        {
+          "id": "LMuDrj5BpM0",
+          "titulo": "AC/DC - Highway to Hell (lyrics)",
+          "canal": "Wind Music",
+          "duracion": "3:31"
+        },
+        {
+          "id": "6CwIB6pQoPo",
+          "titulo": "AC/DC - Highway to Hell (Full Album)",
+          "canal": "Irish O'African",
+          "duracion": "42:00"
+        },
+        {
+          "id": "zhLI6Nz-0H8",
+          "titulo": "AC/DC -  Highway to Hell (Full Album)",
+          "canal": "Luilson Lucas",
+          "duracion": "42:00"
+        }
+      ]
+    },
+    {
+      "artista": "Sopa de Cabra",
+      "titulo": "L'Empordà",
+      "estil": "Rock",
+      "inicio": 30,
+      "video": {
+        "id": "Gs17YhNfKtw",
+        "titulo": "L'Empordà",
+        "canal": "Sopa de Cabra",
+        "duracion": ""
+      },
+      "resultados": []
+    },
+    {
+      "artista": "Ginebras",
+      "titulo": "Desastre de persona",
+      "estil": "Rock",
+      "inicio": 30,
+      "video": {
+        "id": "ZZy_a1G3tNU",
+        "titulo": "Desastre de persona",
+        "canal": "Ginebras",
+        "duracion": ""
+      },
+      "resultados": []
+    },
+    {
+      "artista": "Michael Jackson",
+      "titulo": "Billie Jean",
+      "estil": "Pop",
+      "inicio": 30,
+      "video": {
+        "id": "Zi_XLOBDo_Y",
+        "titulo": "Michael Jackson - Billie Jean (Official Video)",
+        "canal": "Michael Jackson",
+        "duracion": "4:56"
+      },
+      "resultados": [
+        {
+          "id": "Zi_XLOBDo_Y",
+          "titulo": "Michael Jackson - Billie Jean (Official Video)",
+          "canal": "Michael Jackson",
+          "duracion": "4:56"
+        },
+        {
+          "id": "tSi6Dn1H36Y",
+          "titulo": "Michael Jackson - Billie Jean (Live) - 1983",
+          "canal": "allanwv",
+          "duracion": "4:59"
+        },
+        {
+          "id": "Kr4EQDVETuA",
+          "titulo": "Billie Jean",
+          "canal": "Michael Jackson",
+          "duracion": "4:55"
+        },
+        {
+          "id": "bdGseK7U7A0",
+          "titulo": "Greatest Of Michael Jackson",
+          "canal": "Dlo",
+          "duracion": "1:15:19"
+        },
+        {
+          "id": "QRidtXn0u7k",
+          "titulo": "Billie Jean - Michael Jackson (Lyrics)",
+          "canal": "Pizza Music",
+          "duracion": "4:55"
+        }
+      ]
+    },
+    {
+      "artista": "Aitana",
+      "titulo": "Las Babys",
+      "estil": "Pop",
+      "inicio": 30,
+      "video": {
+        "id": "02d2P0KZWDk",
+        "titulo": "Aitana - LAS BABYS (vídeo oficial)",
+        "canal": "Aitana",
+        "duracion": "2:34"
+      },
+      "resultados": [
+        {
+          "id": "02d2P0KZWDk",
+          "titulo": "Aitana - LAS BABYS (vídeo oficial)",
+          "canal": "Aitana",
+          "duracion": "2:34"
+        },
+        {
+          "id": "Op9j7Ebqaao",
+          "titulo": "Aitana - LAS BABYS",
+          "canal": "LatinHype",
+          "duracion": "2:34"
+        },
+        {
+          "id": "iX4DHgj1DDM",
+          "titulo": "Aitana - LAS BABYS (video oficial + letra/lyrics)",
+          "canal": "tivs14",
+          "duracion": "2:27"
+        },
+        {
+          "id": "zKMZy6M25Cg",
+          "titulo": "Aitana - Las Babys (Clean Version)",
+          "canal": "Dj Junerx",
+          "duracion": "2:37"
+        },
+        {
+          "id": "Nn7AC4w7a4E",
+          "titulo": "Aitana - LAS BABYS (Letra) || Video Oficial",
+          "canal": "Purple Light 11",
+          "duracion": "2:34"
+        }
+      ]
+    },
+    {
+      "artista": "Els Catarres",
+      "titulo": "Jenifer",
+      "estil": "Pop",
+      "inicio": 30,
+      "video": {
+        "id": "FhJR6OO1X8Y",
+        "titulo": "Jenifer - Els Catarres",
+        "canal": "Els Catarres",
+        "duracion": "4:06"
+      },
+      "resultados": [
+        {
+          "id": "FhJR6OO1X8Y",
+          "titulo": "Jenifer - Els Catarres",
+          "canal": "Els Catarres",
+          "duracion": "4:06"
+        },
+        {
+          "id": "vFxNLm74wdQ",
+          "titulo": "Els Catarres feat Figa Flawas - Jenifer",
+          "canal": "Els Catarres",
+          "duracion": "3:35"
+        },
+        {
+          "id": "Jbfj-9xJ1I4",
+          "titulo": "Jennifer (Els Catarres) - Lletra -",
+          "canal": "adtvideos",
+          "duracion": "3:52"
+        },
+        {
+          "id": "YOigvHNcffI",
+          "titulo": "Els Catarres - Jenifer",
+          "canal": "Variació Lingüística",
+          "duracion": "3:53"
+        },
+        {
+          "id": "v2Jz2MQPams",
+          "titulo": "ELS CATARRES - Jenifer (directe)",
+          "canal": "mikbowie",
+          "duracion": "4:04"
+        }
+      ]
+    },
+    {
+      "artista": "Daddy Yankee",
+      "titulo": "Gasolina",
+      "estil": "Reggaeton",
+      "inicio": 30,
+      "video": {
+        "id": "CCF1_jI8Prk",
+        "titulo": "Daddy Yankee - Gasolina (Video Oficial)",
+        "canal": "Daddy Yankee",
+        "duracion": "4:14"
+      },
+      "resultados": [
+        {
+          "id": "CCF1_jI8Prk",
+          "titulo": "Daddy Yankee - Gasolina (Video Oficial)",
+          "canal": "Daddy Yankee",
+          "duracion": "4:14"
+        },
+        {
+          "id": "GJP9ZTsgxJs",
+          "titulo": "Daddy Yankee - Gasolina",
+          "canal": "Music - Topic",
+          "duracion": "3:13"
+        },
+        {
+          "id": "q6pbjleOHME",
+          "titulo": "Gasolina (Lyrics) - Daddy Yankee",
+          "canal": "music mingle",
+          "duracion": "3:12"
+        },
+        {
+          "id": "2CiHQpN58Mo",
+          "titulo": "Daddy Yankee - Gasolina (Video Lyric Oficial)",
+          "canal": "Daddy Yankee",
+          "duracion": "3:18"
+        },
+        {
+          "id": "DYw2yFp6hfE",
+          "titulo": "Daddy Yankee - Gasolina (Vídeo) [Clásico Reggaetonero]",
+          "canal": "Clásico Reggaetonero",
+          "duracion": "3:14"
+        }
+      ]
+    },
+    {
+      "artista": "Karol G",
+      "titulo": "Provenza",
+      "estil": "Reggaeton",
+      "inicio": 30,
+      "video": {
+        "id": "ca48oMV59LU",
+        "titulo": "KAROL G - Provenza (Official Video)",
+        "canal": "KAROL G",
+        "duracion": "3:47"
+      },
+      "resultados": [
+        {
+          "id": "ca48oMV59LU",
+          "titulo": "KAROL G - Provenza (Official Video)",
+          "canal": "KAROL G",
+          "duracion": "3:47"
+        },
+        {
+          "id": "yJDJ9eWx3ac",
+          "titulo": "KAROL G - PROVENZA",
+          "canal": "LatinHype",
+          "duracion": "3:27"
+        },
+        {
+          "id": "6Uo_kL2S-v8",
+          "titulo": "Karol G - Provenza + (Tiësto Remix) - Festival Internacional de la Canción de Viña del Mar 2023",
+          "canal": "FESTIVALDEVINACHILE",
+          "duracion": "5:51"
+        },
+        {
+          "id": "oSbX1yZ8gAI",
+          "titulo": "KAROL G - Provenza (Lyric Video)",
+          "canal": "KAROL G",
+          "duracion": "3:30"
+        },
+        {
+          "id": "yIt0ZbbdWdY",
+          "titulo": "Karol G 🎤 Ultimate Latin Music Mix | Tusa, Bichota, Provenza and More",
+          "canal": "Pop Galaxy",
+          "duracion": "26:27"
+        }
+      ]
+    },
+    {
+      "artista": "Daft Punk",
+      "titulo": "One More Time",
+      "estil": "Electrònica",
+      "inicio": 30,
+      "video": {
+        "id": "FGBhQbmPwH8",
+        "titulo": "Daft Punk - One More Time (Official Video)",
+        "canal": "Daft Punk",
+        "duracion": "5:22"
+      },
+      "resultados": [
+        {
+          "id": "FGBhQbmPwH8",
+          "titulo": "Daft Punk - One More Time (Official Video)",
+          "canal": "Daft Punk",
+          "duracion": "5:22"
+        },
+        {
+          "id": "A2VpR8HahKc",
+          "titulo": "Daft Punk - One More Time (Official Audio)",
+          "canal": "Daft Punk",
+          "duracion": "5:21"
+        },
+        {
+          "id": "VeauURD-qLk",
+          "titulo": "D.a.f.t P.u.n.k Greatest Hits 🔥 Best D.a.f.t P.u.n.k Songs & Playlist 🔥 Full Album 2022",
+          "canal": "Music EDM 2022",
+          "duracion": "1:11:15"
+        },
+        {
+          "id": "bmjsUsS8QuM",
+          "titulo": "One More Time (12 Mix)",
+          "canal": "Daft Punk",
+          "duracion": "8:01"
+        },
+        {
+          "id": "WYhv-hR6Q2U",
+          "titulo": "One More Time (Radio Edit)",
+          "canal": "Daft Punk",
+          "duracion": "3:56"
+        }
+      ]
+    },
+    {
+      "artista": "David Guetta",
+      "titulo": "Titanium",
+      "estil": "Electrònica",
+      "inicio": 30,
+      "video": {
+        "id": "JRfuAukYTKg",
+        "titulo": "David Guetta - Titanium ft. Sia (Official Video)",
+        "canal": "David Guetta",
+        "duracion": "4:06"
+      },
+      "resultados": [
+        {
+          "id": "JRfuAukYTKg",
+          "titulo": "David Guetta - Titanium ft. Sia (Official Video)",
+          "canal": "David Guetta",
+          "duracion": "4:06"
+        },
+        {
+          "id": "KxnpFKZowcs",
+          "titulo": "David Guetta - Titanium (Lyrics) ft. Sia",
+          "canal": "7clouds",
+          "duracion": "4:28"
+        },
+        {
+          "id": "S69w0zMW-A0",
+          "titulo": "David Guetta ft Sia - Titanium (David Guetta & MORTEN Future Rave Remix) [Live Edit]",
+          "canal": "David Guetta",
+          "duracion": "3:17"
+        },
+        {
+          "id": "xaurMcGqZHU",
+          "titulo": "David Guetta | United at Home - Dubai Edition",
+          "canal": "David Guetta",
+          "duracion": "1:05:06"
+        },
+        {
+          "id": "Xn_kp8OZtc8",
+          "titulo": "David Guetta - Titanium (feat. Sia) | Lyrics",
+          "canal": "Sunset Sounds",
+          "duracion": "4:06"
+        }
+      ]
+    },
+    {
+      "artista": "Eminem",
+      "titulo": "Lose Yourself",
+      "estil": "Hip-hop",
+      "inicio": 30,
+      "video": {
+        "id": "xFYQQPAOz7Y",
+        "titulo": "Eminem - Lose Yourself",
+        "canal": "EminemMusic",
+        "duracion": "5:28"
+      },
+      "resultados": [
+        {
+          "id": "xFYQQPAOz7Y",
+          "titulo": "Eminem - Lose Yourself",
+          "canal": "EminemMusic",
+          "duracion": "5:28"
+        },
+        {
+          "id": "tR1ECf4sEpw",
+          "titulo": "Eminem - Lose Yourself (Lyrics)",
+          "canal": "7clouds",
+          "duracion": "5:21"
+        },
+        {
+          "id": "_Yhyp-_hX2s",
+          "titulo": "Eminem - Lose Yourself [HD]",
+          "canal": "msvogue23",
+          "duracion": "5:24"
+        },
+        {
+          "id": "7YuAzR2XVAM",
+          "titulo": "Eminem - Lose Yourself (Official Video) (Explicit)",
+          "canal": "EminemExplicit",
+          "duracion": "5:29"
+        },
+        {
+          "id": "Cbtgk20s6wA",
+          "titulo": "Eminem - Lose Yourself • LIVE • The 92nd Academy Awards • Oscars 2020",
+          "canal": "Просто канал",
+          "duracion": "4:07"
+        }
+      ]
+    },
+    {
+      "artista": "Santa Salut",
+      "titulo": "Lluna",
+      "estil": "Hip-hop",
+      "inicio": 30,
+      "video": {
+        "id": "5-99c_ijak0",
+        "titulo": "Lluna",
+        "canal": "Santa Salut",
+        "duracion": ""
+      },
+      "resultados": []
+    },
+    {
+      "artista": "Violadores del Verso",
+      "titulo": "Vicios y Virtudes",
+      "estil": "Hip-hop",
+      "inicio": 30,
+      "video": {
+        "id": "OlKhQgMOKeY",
+        "titulo": "Vicios y Virtudes",
+        "canal": "Violadores del Verso",
+        "duracion": ""
+      },
+      "resultados": []
+    },
+    {
+      "artista": "Mark Ronson i Bruno Mars",
+      "titulo": "Uptown Funk",
+      "estil": "Funk",
+      "inicio": 30,
+      "video": {
+        "id": "OPf0YbXqDm0",
+        "titulo": "Mark Ronson - Uptown Funk (Official Video) ft. Bruno Mars",
+        "canal": "Mark Ronson",
+        "duracion": "4:31"
+      },
+      "resultados": [
+        {
+          "id": "OPf0YbXqDm0",
+          "titulo": "Mark Ronson - Uptown Funk (Official Video) ft. Bruno Mars",
+          "canal": "Mark Ronson",
+          "duracion": "4:31"
+        },
+        {
+          "id": "W8FUmkw3a4U",
+          "titulo": "Mark Ronson - Uptown Funk (Lyrics) ft. Bruno Mars",
+          "canal": "7clouds",
+          "duracion": "4:29"
+        },
+        {
+          "id": "7Ya2U8XN_Zw",
+          "titulo": "Mark Ronson - Uptown Funk (Official Audio) ft. Bruno Mars",
+          "canal": "Mark Ronson",
+          "duracion": "4:31"
+        },
+        {
+          "id": "P-WdrMLLpPg",
+          "titulo": "Mark Ronson & Bruno Mars Perform 'Uptown Funk'",
+          "canal": "TheEllenShow",
+          "duracion": "5:33"
+        },
+        {
+          "id": "GbGX1Sx0gvo",
+          "titulo": "Mark Ronson - Uptown Funk (Live on SNL) ft. Bruno Mars",
+          "canal": "Mark Ronson",
+          "duracion": "4:45"
+        }
+      ]
+    },
+    {
+      "artista": "Aretha Franklin",
+      "titulo": "Respect",
+      "estil": "Funk",
+      "inicio": 30,
+      "video": {
+        "id": "A134hShx_gw",
+        "titulo": "Aretha Franklin - Respect (Official Lyric Video)",
+        "canal": "Aretha Franklin",
+        "duracion": "2:31"
+      },
+      "resultados": [
+        {
+          "id": "A134hShx_gw",
+          "titulo": "Aretha Franklin - Respect (Official Lyric Video)",
+          "canal": "Aretha Franklin",
+          "duracion": "2:31"
+        },
+        {
+          "id": "NVySaEGvv7w",
+          "titulo": "Aretha Franklin - Respect (letra en español/lyrics)",
+          "canal": "•confident garcon•",
+          "duracion": "2:26"
+        },
+        {
+          "id": "U0yIf9Tkgu4",
+          "titulo": "Aretha Franklin - Respect Official Video Winner",
+          "canal": "Aretha Franklin",
+          "duracion": "2:23"
+        },
+        {
+          "id": "UWUHaUJfhSo",
+          "titulo": "Respect",
+          "canal": "Aretha Franklin",
+          "duracion": "2:28"
+        },
+        {
+          "id": "W1bi8UlTV_Y",
+          "titulo": "Respect",
+          "canal": "Aretha Franklin",
+          "duracion": "2:28"
+        }
+      ]
+    },
+    {
+      "artista": "Metallica",
+      "titulo": "Enter Sandman",
+      "estil": "Metal",
+      "inicio": 30,
+      "video": {
+        "id": "CD-E-LDc384",
+        "titulo": "Metallica: Enter Sandman (Official Music Video)",
+        "canal": "Metallica",
+        "duracion": "5:31"
+      },
+      "resultados": [
+        {
+          "id": "CD-E-LDc384",
+          "titulo": "Metallica: Enter Sandman (Official Music Video)",
+          "canal": "Metallica",
+          "duracion": "5:31"
+        },
+        {
+          "id": "XZuM4zFg-60",
+          "titulo": "Enter Sandman (Remastered)",
+          "canal": "Metallica",
+          "duracion": "5:32"
+        },
+        {
+          "id": "87by1DjfxLw",
+          "titulo": "Metallica - Enter Sandman (Live in Mexico City) [Orgullo, Pasión, y Gloria]",
+          "canal": "Metallica",
+          "duracion": "6:47"
+        },
+        {
+          "id": "_W7wqQwa-TU",
+          "titulo": "Metallica - Enter Sandman Live Moscow 1991 HD",
+          "canal": "Met4life1995",
+          "duracion": "6:11"
+        },
+        {
+          "id": "6cwVjgWy3gc",
+          "titulo": "Metallica - Enter Sandman",
+          "canal": "RockHype",
+          "duracion": "5:33"
+        }
+      ]
+    },
+    {
+      "artista": "Evanescence",
+      "titulo": "Bring Me to Life",
+      "estil": "Metal",
+      "inicio": 30,
+      "video": {
+        "id": "3YxaaGgTQYM",
+        "titulo": "Evanescence - Bring Me To Life (Official HD Music Video) ft. Paul McCoy",
+        "canal": "Evanescence",
+        "duracion": "4:14"
+      },
+      "resultados": [
+        {
+          "id": "3YxaaGgTQYM",
+          "titulo": "Evanescence - Bring Me To Life (Official HD Music Video) ft. Paul McCoy",
+          "canal": "Evanescence",
+          "duracion": "4:14"
+        },
+        {
+          "id": "ltoaQo2ynSo",
+          "titulo": "Evanescence - Bring Me To Life",
+          "canal": "RockHype",
+          "duracion": "4:04"
+        },
+        {
+          "id": "vyzO-5vt48g",
+          "titulo": "Evanescence - Bring Me to Life",
+          "canal": "cnc24",
+          "duracion": "3:58"
+        },
+        {
+          "id": "Yhwal9i1uyw",
+          "titulo": "Bring Me To Life (Remastered 2023)",
+          "canal": "Evanescence",
+          "duracion": "3:57"
+        },
+        {
+          "id": "i3MKTm-49uI",
+          "titulo": "Evanescence - Bring Me To Life",
+          "canal": "Evanescence",
+          "duracion": "4:53"
+        }
+      ]
+    },
+    {
+      "artista": "Estopa",
+      "titulo": "La Raja de tu Falda",
+      "estil": "Rumba",
+      "inicio": 30,
+      "video": {
+        "id": "TVFm4hxuVsk",
+        "titulo": "La Raja de tu Falda",
+        "canal": "Estopa",
+        "duracion": ""
+      },
+      "resultados": []
+    },
+    {
+      "artista": "Melendi",
+      "titulo": "Caminando por la vida",
+      "estil": "Rumba",
+      "inicio": 30,
+      "video": {
+        "id": "eznXJEjvHbk",
+        "titulo": "Melendi - Caminando Por La Vida (Videoclip Oficial)",
+        "canal": "Warner Music Spain Archivos",
+        "duracion": "3:24"
+      },
+      "resultados": [
+        {
+          "id": "eznXJEjvHbk",
+          "titulo": "Melendi - Caminando Por La Vida (Videoclip Oficial)",
+          "canal": "Warner Music Spain Archivos",
+          "duracion": "3:24"
+        },
+        {
+          "id": "CRdoEIeTEWw",
+          "titulo": "Caminando por la vida (Remasterized)",
+          "canal": "Melendi",
+          "duracion": "3:58"
+        },
+        {
+          "id": "L9dblXR2y2U",
+          "titulo": "Melendi - Caminando por la vida",
+          "canal": "Guerrero de Melendi",
+          "duracion": "3:24"
+        },
+        {
+          "id": "wYUz6Qdzo7E",
+          "titulo": "Melendi, David Bisbal - Caminando por la Vida (Lyric Video)",
+          "canal": "Melendi",
+          "duracion": "3:28"
+        },
+        {
+          "id": "kN_Cxar532k",
+          "titulo": "Melendi - Caminando Por La Vida  (Lyrics)",
+          "canal": " LeexuuriiMusic",
+          "duracion": "4:24"
+        }
+      ]
+    },
+    {
+      "artista": "Rosalía",
+      "titulo": "Despechá",
+      "estil": "Pop",
+      "inicio": 30,
+      "video": {
+        "id": "5g2hT4GmAGU",
+        "titulo": "ROSALÍA - DESPECHÁ (Official Video)",
+        "canal": "ROSALÍA",
+        "duracion": "2:39"
+      },
+      "resultados": [
+        {
+          "id": "5g2hT4GmAGU",
+          "titulo": "ROSALÍA - DESPECHÁ (Official Video)",
+          "canal": "ROSALÍA",
+          "duracion": "2:39"
+        },
+        {
+          "id": "Y2ESxHKuSOk",
+          "titulo": "ROSALÍA - DESPECHÁ (Official Audio)",
+          "canal": "ROSALÍA",
+          "duracion": "2:39"
+        },
+        {
+          "id": "Mq7gC2gLPLI",
+          "titulo": "ROSALÍA - DESPECHA (Letra/Lyrics)",
+          "canal": "Vibe Music",
+          "duracion": "2:39"
+        },
+        {
+          "id": "7WAf_rlzSsg",
+          "titulo": "ROSALÍA - Despecha (Letra/Lyrics)",
+          "canal": "Reggaeton Mundial",
+          "duracion": "2:37"
+        },
+        {
+          "id": "8J6yunQGZBU",
+          "titulo": "ROSALÍA - DESPECHÁ (Live at the NRJ Music Awards 2022)",
+          "canal": "ROSALÍA",
+          "duracion": "1:47"
+        }
+      ]
+    }
+  ]
+}
